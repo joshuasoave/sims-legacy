@@ -92,11 +92,18 @@ ul {
 .entry img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .entry p {
   color: #333;
   text-align: justify;
   line-height: 1.5;
+}
+
+.entryStory {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
 }
