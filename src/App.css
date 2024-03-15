@@ -1,0 +1,102 @@
+.App {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.Sidebar {
+  width: 20%;
+  background-color: #3a7dcd;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Sidebar h1 {
+  margin-bottom: 20px;
+}
+
+.Tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.Tabs button {
+  background-color: #53b014;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.TabContent {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.TabContent p {
+  color: #333;
+  text-align: justify;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contentContainer h2 {
+  color: #3a7dcd;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.contentContainer p,
+ul {
+  color: #333;
+  line-height: 1.5;
+  font-size: 1.2em;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+}
+
+.entry {
+  margin-bottom: 0.3rem;
+}
+
+.entry h3 {
+  color: #3a7dcd;
+  font-size: 1.2rem;
+}
+
+.entry h4 {
+  color: #53b014;
+  font-size: 1.5rem;
+}
+
+.entry img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.entry p {
+  color: #333;
+  text-align: justify;
+  line-height: 1.5;
+}
