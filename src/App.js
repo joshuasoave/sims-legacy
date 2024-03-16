@@ -39,7 +39,7 @@ function App() {
       <div className="TabContent">
         {isMobile ? (
           <header className="App-header">
-            <h1>Sims 4 Legacy Challenge</h1>
+            <h1>Sims 4 Let's Play</h1>
             <nav>
               <button onClick={() => setActiveTab("entry")}>Entries</button>
               <button onClick={() => setActiveTab("challenge")}>

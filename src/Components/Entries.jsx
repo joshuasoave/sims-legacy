@@ -63,19 +63,6 @@ const Entries = () => {
           {isMobile ? (
             <>
               <button
-                className="nextButton"
-                onClick={() => {
-                  if (!isLastEntry) {
-                    setEntryIndex(entryIndex + 1);
-                    setExpanded(false);
-                  }
-                }}
-                style={{ visibility: isLastEntry ? "hidden" : "visible" }}
-              >
-                {" "}
-                Next Entry
-              </button>
-              <button
                 className="prevButton"
                 onClick={() => {
                   if (!isFirstEntry) {
@@ -88,24 +75,37 @@ const Entries = () => {
                 {" "}
                 Previous Entry
               </button>
+              <button
+                className="nextButton"
+                onClick={() => {
+                  if (!isLastEntry) {
+                    setEntryIndex(entryIndex + 1);
+                    setExpanded(false);
+                  }
+                }}
+                style={{ visibility: isLastEntry ? "hidden" : "visible" }}
+              >
+                {" "}
+                Next Entry
+              </button>
             </>
           ) : null}
         </div>
-      </div>
-      <div className="buttonContainer">
         {isMobile ? null : (
-          <button
-            className="nextButton"
-            onClick={() => {
-              if (!isLastEntry) {
-                setEntryIndex(entryIndex + 1);
-                setExpanded(false); // Reset expansion on navigation
-              }
-            }}
-            style={{ visibility: isLastEntry ? "hidden" : "visible" }}
-          >
-            Next Entry
-          </button>
+          <div className="buttonContainer">
+            <button
+              className="nextButton"
+              onClick={() => {
+                if (!isLastEntry) {
+                  setEntryIndex(entryIndex + 1);
+                  setExpanded(false);
+                }
+              }}
+              style={{ visibility: isLastEntry ? "hidden" : "visible" }}
+            >
+              Next Entry
+            </button>
+          </div>
         )}
       </div>
     </div>

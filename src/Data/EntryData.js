@@ -1,74 +1,79 @@
 export const entryData = [
   {
-    id: 1,
-    date: "2024-03-15",
     title: "The Beginning",
-    photo: "https://imgur.com/5vfhkqh.png",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/DuInqKD.png",
     story:
-      "My name is Gavin Rosethorn and this is my story of becoming the strongest magical family in Del Sol Valley. I was a born a spellcaster and intend to strengthen my bloodline.",
+      "My name is Mack and this is my story of how I became famous in Del Sol Valley. I started with nothing but a dream and a large lot in Del Sol Valley. I knew I was going to make it big.",
   },
   {
-    id: 2,
-    date: "2024-03-15",
     title: "My Setup",
-    photo: "https://imgur.com/4kCuL55.png",
+    date: "2024-03-16,",
+    photo: "https://i.imgur.com/Wcurwzi.png",
     story:
-      "I dont have much to start out with, only the essentials and a mic stand. My dream is to become famous one day. I don't care how, but I'll make it happen.",
+      "I didn't have much to start out with, only the essentials and a mirror. With the mirror, I planned to practice my acting and become a famous actor.",
   },
   {
-    id: 3,
-    date: "2024-03-15",
-    title: "Meeting Miko",
-    photo: "https://i.imgur.com/pwuhTLl.png",
+    title: "Meeting Dylan",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/Q0KMlOL.png",
     story:
-      "After a quick workout out at the gym, a pink haired woman named Miko throws confetti at me. This is part of an age old tradition in Del Sol Valley asking someone on a date. I gladly accept.",
+      "After a quick workout, I met a new friend named Dylan at the gym. He was a cool guy and we hit it off right away. I thought he would good friend to have in Del Sol Valley. Boy, was I wrong.",
   },
   {
-    id: 4,
-    date: "2024-03-15",
     title: "Date Night",
-    photo: "https://i.imgur.com/i1vEKUc.png",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/GlFzw0H.png",
     story:
-      "Miko and I meeup up for our date. Neither of us have any money so we watch the sunset from my place. Her sense humor of is amazing. I think Im falling for her.",
+      "Dylan asked me out for a drink later that night. I have to admit I was surprised. I didn't think he was into me. I was excited to see where the night would take us.",
   },
   {
-    id: 5,
-    date: "2024-03-15",
+    title: "Cold Shoulder",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/RlJiygZ.png",
+    story:
+      "I was wrong about Dylan. He ignored me the entire time to talk to some other guy in the corner. I used the time to practice my acting skills. He didn't even notice.",
+  },
+  {
+    title: "Enter Stage Left",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/jwL2ljb.png",
+    story:
+      "After my monologue, a cute man from the crowd approched me. He introduced himself as Travis. I felt something special about him. Something I didn't feel with Dylan. I asked Travis on a date and he said yes.",
+  },
+  {
+    title: "The Date",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/E662Plg.png",
+    story:
+      "Travis and I had our first date at my house. We were both too broke to afford anything else. I picked him a rose from the neighbor's bush. He loved it.",
+  },
+  {
     title: "First Kiss",
-    photo: "https://i.imgur.com/cQfNor1.png",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/XAtb85k.png",
     story:
-      "Before Miko leaves, we share our first kiss. I've never felt this way about anyone before. I ask her to be my girlfriend and she says yes. I barely sleep from excitement.",
+      "When it started raining, the moment was right. I kissed Travis and electricity shot through my body. I knew I was falling for him.",
   },
   {
-    id: 6,
-    date: "2024-03-15",
-    title: "The Proposal",
-    photo: "https://i.imgur.com/XM84DA3.png",
+    title: "One Step Further",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/YxzpBMd.png",
     story:
-      "I've been thinking about this the past 3 days. I want to spend the rest of my life with Miko. I propose to her at the romance festival and she says yes. I'm the happiest I've ever been.",
+      "Travis got last minute tickets to the Mischief festival. After the drinking the tea, I felt like I was on top of the world. I asked Travis to be my boyfriend and he said yes. He planned to come spend the night.",
   },
   {
-    id: 7,
-    date: "2024-03-15",
-    title: "Karaoke King",
-    photo: "https://i.imgur.com/4sVoH1Y.png",
+    title: "Surprise Visitor",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/XID4PSl.png",
     story:
-      "As if the night couldn't get any better, I win the karaoke contest. Icing on the cake to one of the most eventful 3 days of my life. I win enough money to buy a double bed for Miko and I.",
+      "Dylan showed up at my house with a suitcase uninvited. He got kicked out of his place. I was still mad at him for ignoring me at the bar. And now this? But I still let him a stay the night.",
   },
   {
-    id: 8,
-    date: "2024-03-15",
-    title: "The Wedding",
-    photo: "https://i.imgur.com/NXnkoiv.png",
+    title: "Payback",
+    date: "2024-03-16",
+    photo: "https://i.imgur.com/RRnXNya.png",
     story:
-      "Miko and I exchange vows in the park. We couldn't afford a big wedding, but it was perfect. We met less than a week ago and I feel like I've known her a lifetime.",
-  },
-  {
-    id: 9,
-    date: "2024-03-15",
-    title: "Midnight News",
-    photo: "https://i.imgur.com/RnFwuZ2.png",
-    story:
-      "Miko wakes me up in the middle of night with wonderful news. We're having a baby. We'll need to build an actual house before the baby arrives.",
+      "I forgot to mention that I only had one bed. So Dylan slept in the bush that I use to relieve myself. I didn't feel bad at all. He deserved it.",
   },
 ];
