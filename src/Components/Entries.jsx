@@ -14,7 +14,6 @@ const Entries = () => {
 
   return (
     <div className="contentContainer">
-      <h2>Challenge Entries</h2>
       <div className="entry">
         <div className="buttonContainer">
           <button
@@ -31,8 +30,7 @@ const Entries = () => {
           </button>
         </div>
         <div className="entryContent">
-          <h3>{entryData[entryIndex].title}</h3>
-          <p>{entryData[entryIndex].date}</p>
+          <h2>{entryData[entryIndex].title}</h2>
           <div className={`imageContainer ${expanded ? "expanded" : ""}`}>
             <img
               src={entryData[entryIndex].photo}
