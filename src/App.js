@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-// import Entries from "./Components/Entries";
+import Entries from "./Components/Entries";
 import ChallengeInfo from "./Components/ChallengeInfo";
 import Rules from "./Components/Rules";
 import { CastInfo } from "./Components/CastInfo";
@@ -29,13 +29,13 @@ function App() {
             <h1>Sims 4 Road to Fame</h1>
           </header>
           <div className="Tabs">
-            {/* <button onClick={() => setActiveTab("entry")}>Entries</button> */}
             <button
               className={activeTab === "challenge" ? "active" : ""}
               onClick={() => setActiveTab("challenge")}
             >
               About
             </button>
+
             <button
               className={activeTab === "rules" ? "active" : ""}
               onClick={() => setActiveTab("rules")}
@@ -47,6 +47,12 @@ function App() {
               onClick={() => setActiveTab("cast")}
             >
               Cast
+            </button>
+            <button
+              className={activeTab === "entry" ? "active" : ""}
+              onClick={() => setActiveTab("entry")}
+            >
+              Entries
             </button>
           </div>
         </>
@@ -61,10 +67,12 @@ function App() {
                 Challenge Info
               </button>
               <button onClick={() => setActiveTab("rules")}>Rules</button>
+              <button onClick={() => setActiveTab("cast")}>Cast</button>
+              <button onClick={() => setActiveTab("about")}>About</button>
             </nav>
           </header>
         ) : null}
-        {/* {activeTab === "entry" && <Entries />} */}
+        {activeTab === "entry" && <Entries />}
         {activeTab === "challenge" && <ChallengeInfo />}
         {activeTab === "rules" && <Rules />}
         {activeTab === "cast" && <CastInfo />}
