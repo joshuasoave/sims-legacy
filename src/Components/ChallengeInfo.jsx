@@ -21,7 +21,7 @@ const ChallengeInfo = () => {
       <p>
         The rules are simple. The only cheats allowed are to move sims into the
         household. Each sim will have a unique career or method of gaining fame.
-        One simstagram post is allowed each day. Quicks can be removed with the
+        One simstagram post is allowed each day. Quircks can be removed with a
         potion if the appropriate lifetime points are aquired. Sims all must
         live on the same lot. Romantic partners are allowed, even celebrities.
         No pets or children. The first sim to become a 5 star celebrity wins.
@@ -29,7 +29,13 @@ const ChallengeInfo = () => {
       <p>
         The challenge will be played on a 64x64 lot in Del Sol Valley. The
         household will be given §20,000 to start. The household will consist of
-        7 sims. The challenge will end when the first sim reaches 5 stars.
+        6 sims. The challenge will end when the first sim reaches 5 stars of
+        fame.
+      </p>
+      <p>
+        I hope you enjoy this challenge. I will be posting updates on the
+        progress of the household. Please feel free to share your progress with
+        me as well.
       </p>
     </div>
   );

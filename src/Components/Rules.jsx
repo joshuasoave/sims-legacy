@@ -20,6 +20,15 @@ const Rules = () => {
           <li>The challenge will be played on a 64x64 lot in Del Sol Valley</li>
           <li>The household will be given §20,000 to start</li>
           <li>The challenge will end when the first sim reaches 5 stars</li>
+          <li>No use of life extending objects</li>
+          <li>No use of the wishing well</li>
+          <li>Sims can have careers, but are not required to</li>
+          <li>
+            Sims without careers must contribute in some way such as selling
+            paintings or novels
+          </li>
+          <li>Only one sim per career</li>
+          <li>Only one sim per method of gaining fame</li>
         </ul>
       </div>
     </>

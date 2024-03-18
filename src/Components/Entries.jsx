@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { entryData } from "../Data/EntryData";
+import ImageCarousel from "./ImageCarousel";
 
 const Entries = () => {
   const [entryIndex, setEntryIndex] = useState(0);
@@ -25,82 +26,66 @@ const Entries = () => {
     setExpanded(!expanded);
   };
 
+  const handlePrevEntry = () => {
+    if (!isFirstEntry) {
+      setEntryIndex(entryIndex - 1);
+      setExpanded(false);
+    }
+  };
+
+  const handleNextEntry = () => {
+    if (!isLastEntry) {
+      setEntryIndex(entryIndex + 1);
+      setExpanded(false);
+    }
+  };
+
   return (
     <div className="contentContainer">
       <div className="entry">
-        {isMobile ? null : (
-          <>
-            <div className="buttonContainer">
-              <button
-                className="prevButton"
-                onClick={() => {
-                  if (!isFirstEntry) {
-                    setEntryIndex(entryIndex - 1);
-                    setExpanded(false);
-                  }
-                }}
-                style={{ visibility: isFirstEntry ? "hidden" : "visible" }}
-              >
-                Previous Entry
-              </button>
-            </div>
-          </>
-        )}
         <div className="entryContent">
           <h2>{entryData[entryIndex].title}</h2>
-          <div className={`imageContainer ${expanded ? "expanded" : ""}`}>
-            <img
-              src={entryData[entryIndex].photo}
-              alt={entryData[entryIndex].title}
-            />
-          </div>
+          <ImageCarousel
+            photos={entryData[entryIndex].photos}
+            title={entryData[entryIndex].title}
+          />
           <p
             className={`entryStory ${expanded ? "expanded" : ""}`}
             onClick={toggleExpand}
           >
             {entryData[entryIndex].story}
           </p>
-          {isMobile ? (
+          {isMobile && (
             <>
               <button
                 className="prevButton"
-                onClick={() => {
-                  if (!isFirstEntry) {
-                    setEntryIndex(entryIndex - 1);
-                    setExpanded(false);
-                  }
-                }}
+                onClick={handlePrevEntry}
                 style={{ visibility: isFirstEntry ? "hidden" : "visible" }}
               >
-                {" "}
                 Previous Entry
               </button>
               <button
                 className="nextButton"
-                onClick={() => {
-                  if (!isLastEntry) {
-                    setEntryIndex(entryIndex + 1);
-                    setExpanded(false);
-                  }
-                }}
+                onClick={handleNextEntry}
                 style={{ visibility: isLastEntry ? "hidden" : "visible" }}
               >
-                {" "}
                 Next Entry
               </button>
             </>
-          ) : null}
+          )}
         </div>
-        {isMobile ? null : (
+        {!isMobile && (
           <div className="buttonContainer">
             <button
+              className="prevButton"
+              onClick={handlePrevEntry}
+              style={{ visibility: isFirstEntry ? "hidden" : "visible" }}
+            >
+              Previous Entry
+            </button>
+            <button
               className="nextButton"
-              onClick={() => {
-                if (!isLastEntry) {
-                  setEntryIndex(entryIndex + 1);
-                  setExpanded(false);
-                }
-              }}
+              onClick={handleNextEntry}
               style={{ visibility: isLastEntry ? "hidden" : "visible" }}
             >
               Next Entry

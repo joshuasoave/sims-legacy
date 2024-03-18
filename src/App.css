@@ -8,12 +8,11 @@
 /* Reset and base styles */
 html,
 body,
-#root,
-.App {
+#root {
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: var(--sims-green);
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1903d13-1bf9-4a89-949d-c91802ddb04a/ddvn7v1-cff494c5-4f67-42b5-a3e6-d81ec6f6c84a.png/v1/fill/w_1131,h_707/grid_of_ts3_plumbobs_by_titanicbobo_ddvn7v1-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZjE5MDNkMTMtMWJmOS00YTg5LTk0OWQtYzkxODAyZGRiMDRhXC9kZHZuN3YxLWNmZjQ5NGM1LTRmNjctNDJiNS1hM2U2LWQ4MWVjNmY2Yzg0YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gRUyxhRTgWjVGqRvHkp9qMrgEgT7mLCP-m5-COITIUA");
   color: var(--sims-dark-gray);
   font-family: Arial, sans-serif;
 }
@@ -35,7 +34,7 @@ body,
   text-align: center;
   margin: auto;
   width: 100%;
-  border-bottom: 5px solid var(--sims-dark-gray);
+  border-bottom: 5px solid var(--sims-green);
   box-sizing: border-box;
 }
 
@@ -150,6 +149,85 @@ ul {
 li {
   list-style: none;
   margin-bottom: 10px;
+}
+
+.carouselControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modalContent {
+  background-color: #fff;
+  border: 2px solid var(--sims-blue);
+  padding: 20px;
+  max-width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal Title */
+.modalContent h3 {
+  color: var(--sims-blue);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+/* Modal Image */
+.modalContent img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Modal Description */
+.modalContent p {
+  color: #000;
+  font-family: "Arial", sans-serif;
+}
+
+/* Close Button */
+.modalContent button {
+  background-color: var(--sims-green);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modalContent button:hover {
+  background-color: var(--sims-blue);
 }
 
 @media (max-width: 768px) {
