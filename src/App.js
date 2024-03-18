@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Entries from "./Components/Entries";
+// import Entries from "./Components/Entries";
 import ChallengeInfo from "./Components/ChallengeInfo";
 import Rules from "./Components/Rules";
+import { CastInfo } from "./Components/CastInfo";
 
 function App() {
   const [activeTab, setActiveTab] = useState("entry");
@@ -23,23 +24,37 @@ function App() {
   return (
     <div className="App">
       {!isMobile && (
-        <div className="Sidebar">
+        <>
           <header className="App-header">
-            <h1>Sims 4 Legacy Challenge</h1>
+            <h1>Sims 4 Road to Fame</h1>
           </header>
           <div className="Tabs">
-            <button onClick={() => setActiveTab("entry")}>Entries</button>
-            <button onClick={() => setActiveTab("challenge")}>
-              Challenge Info
+            {/* <button onClick={() => setActiveTab("entry")}>Entries</button> */}
+            <button
+              className={activeTab === "challenge" ? "active" : ""}
+              onClick={() => setActiveTab("challenge")}
+            >
+              About
             </button>
-            <button onClick={() => setActiveTab("rules")}>Rules</button>
+            <button
+              className={activeTab === "rules" ? "active" : ""}
+              onClick={() => setActiveTab("rules")}
+            >
+              Rules
+            </button>
+            <button
+              className={activeTab === "cast" ? "active" : ""}
+              onClick={() => setActiveTab("cast")}
+            >
+              Cast
+            </button>
           </div>
-        </div>
+        </>
       )}
       <div className="TabContent">
         {isMobile ? (
           <header className="App-header">
-            <h1>Sims 4 Let's Play</h1>
+            <h1>Sims 4 Road to Fame</h1>
             <nav>
               <button onClick={() => setActiveTab("entry")}>Entries</button>
               <button onClick={() => setActiveTab("challenge")}>
@@ -49,9 +64,10 @@ function App() {
             </nav>
           </header>
         ) : null}
-        {activeTab === "entry" && <Entries />}
+        {/* {activeTab === "entry" && <Entries />} */}
         {activeTab === "challenge" && <ChallengeInfo />}
         {activeTab === "rules" && <Rules />}
+        {activeTab === "cast" && <CastInfo />}
       </div>
     </div>
   );

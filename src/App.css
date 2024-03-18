@@ -1,224 +1,25 @@
-body,
+:root {
+  --sims-blue: #3a7dcd;
+  --sims-green: #53b014;
+  --sims-light-gray: #f4f4f4;
+  --sims-dark-gray: #333;
+}
+
+/* Reset and base styles */
 html,
+body,
 #root,
 .App {
   height: 100%;
   padding: 0;
   margin: 0;
-}
-
-.App {
-  display: flex;
+  background-color: var(--sims-light-gray);
+  color: var(--sims-dark-gray);
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-.Sidebar {
-  width: 20%;
-  background-color: #3a7dcd;
-  padding: 20px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.Sidebar h1 {
-  margin-bottom: 20px;
-}
-
-.Tabs {
-  display: flex;
-  flex-direction: column;
-}
-
-.Tabs button {
-  background-color: #53b014;
-  color: white;
-  border: none;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.TabContent {
-  background-color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.TabContent p {
-  color: #333;
-  text-align: justify;
-}
-
-.contentContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.contentContainer h2 {
-  color: #3a7dcd;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 2em;
-}
-
-.contentContainer p,
-ul {
-  color: #333;
-  line-height: 1.5;
-  font-size: 1.2em;
-  text-align: justify;
-  font-family: Arial, sans-serif;
-}
-
-.entry {
-  margin-bottom: 0.3rem;
-}
-
-.entry h3 {
-  color: #3a7dcd;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.entry h4 {
-  color: #53b014;
-  font-size: 1.5rem;
-}
-
-.entry img {
-  width: 15rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.entry p {
-  color: #333;
-  text-align: justify;
-  line-height: 1.5;
-}
-
-.entryStory {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.entry {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.3rem;
-}
-
-.buttonContainer {
-  flex: 1;
-  text-align: center;
-}
-
-.prevButton,
-.nextButton {
-  background-color: #53b014;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.nextButton {
-  background-color: #3a7dcd;
-}
-
-.entryContent {
-  overflow: hidden;
-}
-
-.entryStory::-webkit-scrollbar {
-  width: 5px;
-}
-
-.entryStory::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 5px;
-}
-
-.entryStory {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 5px 20px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  cursor: pointer;
-}
-
-.entryStory.expanded {
-  max-height: none;
-  overflow: auto;
-  text-overflow: unset;
-  -webkit-line-clamp: initial;
-}
-
-@media (max-width: 768px) {
-  .Sidebar {
-    width: 100%;
-  }
-  .TabContent {
-    padding: 20px;
-  }
-  .contentContainer {
-    padding: 20px;
-  }
-  entry img {
-    width: 35rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .Sidebar {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .Tabs {
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  .TabContent {
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .contentContainer {
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .entry img {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 
 .App-header {
-  background-color: #3a7dcd;
+  background-color: var(--sims-blue);
   color: white;
   padding: 20px;
   text-align: center;
@@ -228,16 +29,112 @@ ul {
   margin-bottom: 20px;
 }
 
-.App-header nav {
-  display: flex;
-  justify-content: space-around;
+.TabContent {
+  height: 100%;
 }
 
-.App-header nav button {
-  background-color: #53b014;
-  color: white;
+.Tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Tabs button {
+  position: relative;
+  background-color: transparent;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0 2rem;
+  margin: 1rem 10rem;
   cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.Tabs button::before {
+  content: "\2605";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: var(--sims-blue);
+  transition: transform 0.3s, color 0.3s; /* Apply transition for smooth rotation and color change */
+}
+
+.Tabs button:hover::before {
+  transform: rotate(360deg); /* Rotate the star on hover */
+  color: var(--sims-green); /* Change color on hover */
+}
+
+.Tabs button span {
+  position: relative;
+  z-index: 1;
+}
+
+.Tabs button.active::before {
+  content: "\2605";
+  color: var(--sims-green);
+}
+/* Cast info styles */
+.castInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.castMember {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.castMember img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.castMember h3 {
+  margin: 0;
+}
+
+.castMember p {
+  margin: 0;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 70%;
+  margin: auto;
+  height: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .castMember {
+    width: 100%;
+    max-width: 100%;
+  }
 }
