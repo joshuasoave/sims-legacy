@@ -48,16 +48,15 @@ export const entryData = [
         </p>
 
         <p>
-          Cassandra's busy with her brush, while Nathaniel's penning his path to
-          fame. Gavin's belting out tunes, and Jasper's pumping iron. The
-          premiere day arrives, and the contestants are primed for their
+          Cassandra's busy with her paintbrush, while Nathaniel's writing his
+          path to fame. Gavin's belting out tunes, and Jasper's pumping iron.
+          The premiere day arrives, and the contestants are primed for their
           journey. But as night falls, Cassandra stumbles upon Eloise and Sage's
           secret rendezvous. Seizing the moment, she immortalizes their affair
           in a scandalous painting, earning fame points aplenty. But trouble
           brews as Nathaniel learns the truth and delivers a fiery slap to
           Eloise!
         </p>
-
         <p>
           As dawn breaks, Gavin hits the town and finds himself in the company
           of A-lister Thorne Blackwood. A simple photo request turns into a
@@ -92,8 +91,7 @@ export const entryData = [
       },
       {
         photo: "https://i.imgur.com/ojNZxd0.png",
-        caption:
-          "Eloise earns a star and changes her image to a more edgy look",
+        caption: "Eloise earns a star for her more edgy look",
       },
     ],
     story: (

@@ -28,13 +28,12 @@ body,
 }
 
 .App-header {
-  background-color: var(--sims-blue);
+  background-image: linear-gradient(90deg, #3a7dcd 30%, #53b014 100%);
   color: white;
   padding: 20px 0;
   text-align: center;
   margin: auto;
   width: 100%;
-  border-bottom: 5px solid var(--sims-green);
   box-sizing: border-box;
 }
 
@@ -55,9 +54,8 @@ body,
 .Tabs {
   display: flex;
   justify-content: center;
-  background-color: var(--sims-light-gray);
+  background-color: var(--sims-dark-gray);
   list-style: none;
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
@@ -67,7 +65,7 @@ body,
   position: relative;
   background-color: transparent;
   border: none;
-  padding: 0 2rem;
+  padding: 0.2rem 2rem;
   margin: 1rem 2rem;
   cursor: pointer;
   align-items: center;
@@ -76,6 +74,7 @@ body,
   font-size: 18px;
   font-weight: bold;
   font-family: Arial, sans-serif;
+  color: white;
 }
 
 .Tabs button::before {
