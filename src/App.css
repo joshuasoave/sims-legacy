@@ -20,7 +20,7 @@ body,
 .App {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin: auto;
   background-color: var(--sims-light-gray);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -384,20 +384,25 @@ ul {
   padding: 0;
   margin: 10px auto;
 }
-@media (max-width: 768px) {
+
+@media (min-width: 798px) {
+  .App {
+    width: 75%;
+  }
+
+  .contentContainer {
+    width: 60%;
+  }
+
+  .castInfoContainer {
+    width: 70%;
+  }
+
   .castMember {
     width: 100%;
-    max-width: 100%;
   }
-  .TabContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .entryContentContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+  .castMember img {
+    width: 80%;
   }
 }
