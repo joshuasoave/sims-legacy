@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Sims 4 Road to Fame</h1>
+        <h1>Sims 4 House of Fame</h1>
       </header>
       <div className="Tabs">
         <button
