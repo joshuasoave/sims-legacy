@@ -149,6 +149,8 @@ body,
   width: 70%;
   margin: auto;
   background-color: var(--sims-light-gray);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 ul {
@@ -191,6 +193,16 @@ li {
   height: 100%;
 }
 
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 /* Arrow Icon Button */
 .imageWrapper button {
   background: none;
@@ -221,7 +233,8 @@ li {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 10px;
+  flex-direction: column;
+  padding: 2.5rem;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -341,18 +354,6 @@ li {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .castMember {
-    width: 100%;
-    max-width: 100%;
-  }
-  .TabContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-
 p {
   font-size: 18px;
   line-height: 1.2;
@@ -378,4 +379,21 @@ ul {
   list-style: none;
   padding: 0;
   margin: 10px auto;
+}
+@media (max-width: 768px) {
+  .castMember {
+    width: 100%;
+    max-width: 100%;
+  }
+  .TabContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .entryContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

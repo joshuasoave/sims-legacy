@@ -9,23 +9,23 @@ export const entryData = [
       },
       {
         photo: "https://i.imgur.com/BBNdmhP.png",
-        caption: "The gang honing their craft",
+        caption: "The gang hones their craft",
       },
       {
         photo: "https://i.imgur.com/ivf0heh.png",
-        caption: "Eloise getting cozy with Sage",
+        caption: "Eloise gets cozy with Sage",
       },
       {
         photo: "https://i.imgur.com/QB9j7KK.png",
-        caption: "Cassandra painting evidence of the affair",
+        caption: "Cassandra paints evidence of the affair",
       },
       {
         photo: "https://i.imgur.com/QCbCOB5.png",
-        caption: "Nathaniel slapping Eloise for cheating on him",
+        caption: "Nathaniel slaps Eloise for cheating on him",
       },
       {
         photo: "https://i.imgur.com/ojkOl2k.png",
-        caption: "Gavin performing with celebrity Thorne Blackwood",
+        caption: "Gavin performs with celebrity Thorne Blackwood",
       },
     ],
     story: (
@@ -65,6 +65,60 @@ export const entryData = [
           Gavin inches closer to Cassandra in the fame race. The competition's
           heating up, and the rest of the house better keep pace if they aim to
           claim the ultimate prize!
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "The First Week",
+    date: "2024-03-19",
+    photos: [
+      {
+        photo: "https://i.imgur.com/oXNX3jJ.png",
+        caption: "Cassandra earns a fame star from her paintings",
+      },
+      {
+        photo: "https://i.imgur.com/am6Q19H.png",
+        caption:
+          "Nathaniel self-publishes his first series of novels and earns a star",
+      },
+      {
+        photo: "https://i.imgur.com/KNLf7kv.png",
+        caption: "Gavin earns a star from his work as a musician",
+      },
+      {
+        photo: "https://i.imgur.com/2fBAZEX.png",
+        caption: "Eloise goes on set to get into hair and makeup",
+      },
+      {
+        photo: "https://i.imgur.com/ojNZxd0.png",
+        caption:
+          "Eloise earns a star and changes her image to a more edgy look",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          The first week in The House of Fame has been nothing short of
+          exhilarating! Cassandra's been hard at work, churning out paintings
+          that have earned her a fame star. Nathaniel's been busy too,
+          self-publishing his first series of novels and earning a star of his
+          own. Gavin's been making waves in the music scene, and his hard work
+          has paid off with a fame star.
+        </p>
+        <p>
+          Eloise has been busy too, but her focus has been on her appearance.
+          She's gone on set to get into hair and makeup, and the results are
+          stunning. Her new edgy look has earned her a fame star, and she's
+          ready to take on the world. The competition's heating up, and the
+          housemates are ready to give it their all. Who will be the first to
+          reach five stars and claim the ultimate prize?
+        </p>
+        <p>
+          Unfortunately for Jasper and Sage, there will be an elimination round
+          since a majority of the housemates have reached the same fame status.
+          The sim with the lowest fame status will be eliminated. Who will it
+          be? Stay tuned to find out!
         </p>
       </div>
     ),
