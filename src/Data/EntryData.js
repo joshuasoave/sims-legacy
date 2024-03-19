@@ -1,6 +1,6 @@
 export const entryData = [
   {
-    title: "The Beginning",
+    title: "Welcome to The House of Fame!",
     date: "2024-03-18",
     photos: [
       {
@@ -69,7 +69,7 @@ export const entryData = [
     ),
   },
   {
-    title: "The First Week",
+    title: "Week One",
     date: "2024-03-19",
     photos: [
       {
@@ -165,6 +165,95 @@ export const entryData = [
           rest of the housemates are left to pick up the pieces. The competition
           is heating up, and the stakes have never been higher. Who will be the
           next to go, and who will claim the ultimate prize?
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "The Price of Fame",
+    date: "2024-03-19",
+    photos: [
+      {
+        photo: "https://i.imgur.com/eqn0Mm3.png",
+        caption: "Nathaniel gains back his star by publishing a bestseller",
+      },
+      {
+        photo: "https://i.imgur.com/Cpj7TSS.png",
+        caption: "Cassandra paints a masterpiece and earns a second star",
+      },
+      {
+        photo: "https://i.imgur.com/FXkJiLW.png",
+        caption:
+          "Eloise starts streaming vlogs and gets close to a second star",
+      },
+      {
+        photo: "https://i.imgur.com/Vkfk0xX.png",
+        caption: "Jasper earns a star from streaming workout videos",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          The second week in The House of Fame has been nothing short of
+          exhilarating! The cast experiences their first round of fame decay. If
+          celebrities don't keep up with their fame, they will lose it. They
+          must continue to generate fame points or they will lose their stars.
+        </p>
+        <p>
+          Nathaniel's been hard at work. After losing a star to fame decay, he
+          works on gaining back his star by publishing a bestseller. He works on
+          it so long, his hair grows to his shoulders.
+        </p>
+        <p>
+          On the other side of the creative circle, Cassandra's been busy too,
+          painting a masterpiece that has earned her a second star. Eloise has
+          been streaming vlogs and getting close to a second star of her own.
+          Jasper's been making waves in the fitness world, earning a star from
+          streaming workout videos.
+        </p>
+        <p>
+          The competition's heating up, and the housemates are ready to give it
+          their all. Who will be the first to reach five stars and claim the
+          ultimate prize? Stay tuned to find out!
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "The Holiday Special",
+    date: "2024-03-20",
+    photos: [
+      {
+        photo: "https://i.imgur.com/MoVvCY1.png",
+        caption: "Gavin cooks a Winterfest grand meal for the house",
+      },
+      {
+        photo: "https://i.imgur.com/yyTeKKz.png",
+        caption: "Father Winter visits",
+      },
+      {
+        photo: "https://i.imgur.com/usgbfQU.png",
+        caption: "Gavin writes a Winterfest song and earns back his star",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          The holiday season is upon us, and the housemates are ready to
+          celebrate. Gavin struggles to get into the holiday spirit because he
+          loses a fame star. He tries getting back the spirit by cooking a
+          Winterfest grand meal for the house. The castmates gather around the
+          table to enjoy the feast, and the holiday cheer is palpable. Later
+          that night, Father Winter visits the house, and the castmates are
+          thrilled to see him. He brings gifts for everyone, and the celebration
+          is in full swing.
+        </p>
+        <p>
+          Inspired by the holiday spirit, Gavin writes a Winterfest song and
+          earns back his star. He is now tied with Cassandra for the most stars
+          with Eloise close behind them. The competition is heating up, and the
+          stakes have never been higher. Who will be the next to go, and who
+          will claim the ultimate prize?
         </p>
       </div>
     ),
