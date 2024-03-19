@@ -20,7 +20,7 @@ body,
 .App {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 93%;
   margin: auto;
   background-color: var(--sims-light-gray);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,13 +28,12 @@ body,
 }
 
 .App-header {
-  background-color: var(--sims-blue);
+  background-image: linear-gradient(90deg, #3a7dcd 30%, #53b014 100%);
   color: white;
   padding: 20px 0;
   text-align: center;
   margin: auto;
   width: 100%;
-  border-bottom: 5px solid var(--sims-green);
   box-sizing: border-box;
 }
 
@@ -55,9 +54,8 @@ body,
 .Tabs {
   display: flex;
   justify-content: center;
-  background-color: var(--sims-light-gray);
+  background-color: var(--sims-dark-gray);
   list-style: none;
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
@@ -67,7 +65,7 @@ body,
   position: relative;
   background-color: transparent;
   border: none;
-  padding: 0 2rem;
+  padding: 0.2rem 2rem;
   margin: 1rem 2rem;
   cursor: pointer;
   align-items: center;
@@ -76,6 +74,7 @@ body,
   font-size: 18px;
   font-weight: bold;
   font-family: Arial, sans-serif;
+  color: white;
 }
 
 .Tabs button::before {
@@ -86,12 +85,12 @@ body,
   transform: translate(-50%, -50%);
   font-size: 24px;
   color: var(--sims-blue);
-  transition: transform 0.3s, color 0.3s; /* Apply transition for smooth rotation and color change */
+  transition: transform 0.3s, color 0.3s;
 }
 
 .Tabs button:hover::before {
-  transform: rotate(360deg); /* Rotate the star on hover */
-  color: var(--sims-green); /* Change color on hover */
+  transform: rotate(360deg);
+  color: var(--sims-green);
 }
 
 .Tabs button span {
@@ -116,7 +115,7 @@ body,
 }
 
 .castMember {
-  width: 30%;
+  width: 100%;
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -146,7 +145,6 @@ body,
   justify-content: flex-start;
   padding: 20px;
   box-sizing: border-box;
-  width: 70%;
   margin: auto;
   background-color: var(--sims-light-gray);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -231,7 +229,7 @@ li {
 .entry {
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   align-items: center;
   flex-direction: column;
   padding: 2.5rem;
@@ -259,6 +257,29 @@ li {
   width: 100%;
   height: auto;
   border-radius: 4px;
+}
+
+.imageButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  background-color: var(--sims-blue);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s;
+}
+
+.modalOverlay .closeButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 /* Modal Overlay */
@@ -291,6 +312,7 @@ li {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  height: 90%;
 }
 
 /* Modal Title */
@@ -302,7 +324,7 @@ li {
 
 /* Modal Image */
 .modalContent img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -316,7 +338,7 @@ li {
 
 /* Close Button */
 .modalContent button {
-  background-color: var(--sims-green);
+  background-color: var(--sims-blue);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -324,20 +346,25 @@ li {
   cursor: pointer;
   font-family: "Arial", sans-serif;
   transition: background-color 0.3s;
-  position: absolute;
-  top: 20px;
-  right: 20px;
 }
 
 .modalContent button:hover {
-  background-color: var(--sims-blue);
+  background-color: var(--sims-green);
+}
+
+.modalButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: RFValue(10);
 }
 
 .button {
   background-color: var(--sims-blue);
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: RFValue(10) RFValue(20);
   border-radius: 4px;
   cursor: pointer;
   font-family: "Arial", sans-serif;
@@ -383,6 +410,10 @@ ul {
   list-style: none;
   padding: 0;
   margin: 10px auto;
+}
+
+img {
+  border-radius: 4px;
 }
 
 @media (min-width: 798px) {

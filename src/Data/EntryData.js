@@ -48,16 +48,15 @@ export const entryData = [
         </p>
 
         <p>
-          Cassandra's busy with her brush, while Nathaniel's penning his path to
-          fame. Gavin's belting out tunes, and Jasper's pumping iron. The
-          premiere day arrives, and the contestants are primed for their
+          Cassandra's busy with her paintbrush, while Nathaniel's writing his
+          path to fame. Gavin's belting out tunes, and Jasper's pumping iron.
+          The premiere day arrives, and the contestants are primed for their
           journey. But as night falls, Cassandra stumbles upon Eloise and Sage's
           secret rendezvous. Seizing the moment, she immortalizes their affair
           in a scandalous painting, earning fame points aplenty. But trouble
           brews as Nathaniel learns the truth and delivers a fiery slap to
           Eloise!
         </p>
-
         <p>
           As dawn breaks, Gavin hits the town and finds himself in the company
           of A-lister Thorne Blackwood. A simple photo request turns into a
@@ -92,8 +91,7 @@ export const entryData = [
       },
       {
         photo: "https://i.imgur.com/ojNZxd0.png",
-        caption:
-          "Eloise earns a star and changes her image to a more edgy look",
+        caption: "Eloise earns a star for her more edgy look",
       },
     ],
     story: (
@@ -119,6 +117,54 @@ export const entryData = [
           since a majority of the housemates have reached the same fame status.
           The sim with the lowest fame status will be eliminated. Who will it
           be? Stay tuned to find out!
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "The First Elimination",
+    date: "2024-03-20",
+    photos: [
+      {
+        photo: "https://i.imgur.com/9752M1t.png",
+        caption:
+          "Gavin streams his guitar solo and earns a second star before the elimination ceremony",
+      },
+      {
+        photo: "https://i.imgur.com/W6ceKGE.png",
+        caption: "Jasper and Sage are both on the chopping block",
+      },
+      {
+        photo: "https://i.imgur.com/2GU2cJ7.png",
+        caption: "Jasper has more followers and is saved from elimination",
+      },
+      {
+        photo: "https://i.imgur.com/Jp8nYVE.png",
+        caption:
+          "Sage screams obscenities as he leaves the house after being eliminated",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          The first elimination round has arrived, and the housemates are on
+          edge. Gavin's been hard at work, streaming his guitar solo and earning
+          a second star before the elimination ceremony. Jasper and Sage are
+          both on the chopping block, and the tension is palpable.
+        </p>
+        <p>
+          The city lights shine behind the castmates as they sit together. Who
+          will be eliminated from the competition? Jasper and Sage have both
+          been streaming, but it all comes down to which of them has the most
+          followers.
+        </p>
+        <p>
+          The results are in, and Jasper has more followers, saving him from
+          elimination. Sage is eliminated from the competition, and he's not
+          happy about it. He screams obscenities as he leaves the house, and the
+          rest of the housemates are left to pick up the pieces. The competition
+          is heating up, and the stakes have never been higher. Who will be the
+          next to go, and who will claim the ultimate prize?
         </p>
       </div>
     ),

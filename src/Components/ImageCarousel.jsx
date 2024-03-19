@@ -69,7 +69,7 @@ const ImageCarousel = ({ photos = [] }) => {
           <PhotoModal
             isOpen={isModalOpen}
             onClose={closeModal}
-            photo={photos[photoIndex]?.photo}
+            photos={photos}
             caption={photos[photoIndex]?.caption}
           />
         </>
