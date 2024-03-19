@@ -123,4 +123,52 @@ export const entryData = [
       </div>
     ),
   },
+  {
+    title: "The First Elimination",
+    date: "2024-03-20",
+    photos: [
+      {
+        photo: "https://i.imgur.com/9752M1t.png",
+        caption:
+          "Gavin streams his guitar solo and earns a second star before the elimination ceremony",
+      },
+      {
+        photo: "https://i.imgur.com/W6ceKGE.png",
+        caption: "Jasper and Sage are both on the chopping block",
+      },
+      {
+        photo: "https://i.imgur.com/2GU2cJ7.png",
+        caption: "Jasper has more followers and is saved from elimination",
+      },
+      {
+        photo: "https://i.imgur.com/Jp8nYVE.png",
+        caption:
+          "Sage screams obscenities as he leaves the house after being eliminated",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          The first elimination round has arrived, and the housemates are on
+          edge. Gavin's been hard at work, streaming his guitar solo and earning
+          a second star before the elimination ceremony. Jasper and Sage are
+          both on the chopping block, and the tension is palpable.
+        </p>
+        <p>
+          The city lights shine behind the castmates as they sit together. Who
+          will be eliminated from the competition? Jasper and Sage have both
+          been streaming, but it all comes down to which of them has the most
+          followers.
+        </p>
+        <p>
+          The results are in, and Jasper has more followers, saving him from
+          elimination. Sage is eliminated from the competition, and he's not
+          happy about it. He screams obscenities as he leaves the house, and the
+          rest of the housemates are left to pick up the pieces. The competition
+          is heating up, and the stakes have never been higher. Who will be the
+          next to go, and who will claim the ultimate prize?
+        </p>
+      </div>
+    ),
+  },
 ];
