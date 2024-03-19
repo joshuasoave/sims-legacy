@@ -4,14 +4,14 @@ export const castInfo = [
     img: "https://i.imgur.com/wD7ounl.png",
     occupation: "Musician",
     description:
-      "Gavin is a musician in Del Sol Valley. He is a hopeless romantic and is looking for love.",
+      "Gavin is a musician in Del Sol Valley. He is currently writing his sophmore album.",
   },
   {
     name: "Jasper Hawthorne",
     img: "https://i.imgur.com/s7NKz7F.png",
     occupation: "Hockey Player",
     description:
-      "Jasper is a hockey player in Del Sol Valley. He is always rumored to be dating someone new.",
+      "Jasper is an amateur hockey player in Del Sol Valley. He also streams workout routines.",
   },
   {
     name: "Eloise Argent",
@@ -21,18 +21,11 @@ export const castInfo = [
       "Eloise is an actress in Del Sol Valley. She is always looking for her next big role.",
   },
   {
-    name: "Beatrice Argent",
-    img: "https://i.imgur.com/Ek4oXEl.png",
-    occupation: "Musician",
-    description:
-      "Beatrice is a musician in Del Sol Valley. She plays in a band with Gavin.",
-  },
-  {
     name: "Cassandra Belladonna",
     img: "https://i.imgur.com/scErDwF.png",
     occupation: "Painter",
     description:
-      "Cassandra is a painter in Del Sol Valley. She is always looking for inspiration from nature.",
+      "Cassandra is a painter in Del Sol Valley. She looks for inspiration from nature.",
   },
   {
     name: "Nathaniel Toro",
@@ -44,8 +37,8 @@ export const castInfo = [
   {
     name: "Sage Brimstone",
     img: "https://i.imgur.com/QsHhDVm.png",
-    occupation: "Tech Guru",
+    occupation: "Video Game Streamer",
     description:
-      "Sage is a tech guru in Del Sol Valley. His mind works in mysterious ways.",
+      "Sage is a full time streamer in Del Sol Valley. He does programming and video games on his channel.",
   },
 ];

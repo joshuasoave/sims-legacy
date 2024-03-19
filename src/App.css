@@ -8,21 +8,34 @@
 /* Reset and base styles */
 html,
 body,
-#root,
-.App {
+#root {
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: var(--sims-light-gray);
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1903d13-1bf9-4a89-949d-c91802ddb04a/ddvn7v1-cff494c5-4f67-42b5-a3e6-d81ec6f6c84a.png/v1/fill/w_1131,h_707/grid_of_ts3_plumbobs_by_titanicbobo_ddvn7v1-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZjE5MDNkMTMtMWJmOS00YTg5LTk0OWQtYzkxODAyZGRiMDRhXC9kZHZuN3YxLWNmZjQ5NGM1LTRmNjctNDJiNS1hM2U2LWQ4MWVjNmY2Yzg0YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gRUyxhRTgWjVGqRvHkp9qMrgEgT7mLCP-m5-COITIUA");
   color: var(--sims-dark-gray);
   font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  background-color: var(--sims-light-gray);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 .App-header {
   background-color: var(--sims-blue);
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
+  margin: auto;
+  width: 100%;
+  border-bottom: 5px solid var(--sims-green);
+  box-sizing: border-box;
 }
 
 .App-header h1 {
@@ -30,15 +43,24 @@ body,
 }
 
 .TabContent {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--sims-light-gray);
+  justify-content: center;
 }
 
 .Tabs {
   display: flex;
   justify-content: center;
+  background-color: var(--sims-light-gray);
   list-style: none;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .Tabs button {
@@ -46,7 +68,7 @@ body,
   background-color: transparent;
   border: none;
   padding: 0 2rem;
-  margin: 1rem 10rem;
+  margin: 1rem 2rem;
   cursor: pointer;
   align-items: center;
   display: flex;
@@ -88,6 +110,9 @@ body,
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  background-color: var(--sims-light-gray);
 }
 
 .castMember {
@@ -96,6 +121,10 @@ body,
   padding: 10px;
   text-align: center;
   background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border: 2px solid var(--sims-blue);
 }
 
 .castMember img {
@@ -119,7 +148,7 @@ body,
   box-sizing: border-box;
   width: 70%;
   margin: auto;
-  height: 100%;
+  background-color: var(--sims-light-gray);
 }
 
 ul {
@@ -132,9 +161,221 @@ li {
   margin-bottom: 10px;
 }
 
+/* Image Wrapper */
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  position: relative;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* Arrow Icon Button */
+.imageWrapper button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Arrow Icon */
+.arrowButton {
+  font-size: 24px;
+  color: var(--sims-blue);
+}
+
+/* Disable pointer events for disabled button */
+.arrowButton[disabled] {
+  color: var(--sims-light-gray);
+}
+
+/* Adjust padding and margin */
+.imageWrapper .arrowButton {
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.entry {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.entryContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modalContent {
+  background-color: #fff;
+  border: 2px solid var(--sims-blue);
+  padding: 20px;
+  max-width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal Title */
+.modalContent h3 {
+  color: var(--sims-blue);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+/* Modal Image */
+.modalContent img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Modal Description */
+.modalContent p {
+  color: #000;
+  font-family: "Arial", sans-serif;
+}
+
+/* Close Button */
+.modalContent button {
+  background-color: var(--sims-green);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modalContent button:hover {
+  background-color: var(--sims-blue);
+}
+
+.button {
+  background-color: var(--sims-blue);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--sims-green);
+}
+
+/* Hidden Button */
+.hidden {
+  visibility: hidden;
+}
+
+.contentContainer h2 {
+  margin: 0;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .castMember {
     width: 100%;
     max-width: 100%;
   }
+  .TabContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
 }
