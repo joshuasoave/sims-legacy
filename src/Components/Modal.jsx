@@ -10,7 +10,9 @@ const Modal = ({ isOpen, onClose, castMember }) => {
         <p>{castMember.occupation}</p>
         <img src={castMember.img} alt={castMember.name} />
         <p>{castMember.description}</p>
-        <button onClick={onClose}>Close</button>
+        <button className="closeBtn" onClick={onClose}>
+          X
+        </button>
       </div>
     </div>
   );
