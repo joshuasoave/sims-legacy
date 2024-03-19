@@ -28,19 +28,11 @@ const Entries = () => {
       }
     };
     window.addEventListener("keydown", handleKeyDown);
-  }, [entryIndex]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [entryIndex]);
 
   const isFirstEntry = entryIndex === 0;
   const isLastEntry = entryIndex === entryData.length - 1;
@@ -64,15 +56,24 @@ const Entries = () => {
   };
 
   return (
-    <div className="contentContainer">
-      <h2>{entryData[entryIndex].title}</h2>
-      <ImageCarousel photos={entryData[entryIndex].photos} />
-      <p
-        className={`entryStory ${expanded ? "expanded" : ""}`}
-        onClick={toggleExpand}
-      >
-        {entryData[entryIndex].story}
-      </p>
+    <div className="entryContentContainer">
+      {entryData.map((entry, index) => (
+        <div
+          key={index}
+          className={`entry ${index === entryIndex ? "active" : ""}`}
+        >
+          <h2>{entry.title}</h2>
+          <ImageCarousel photos={entry.photos} />
+          <p
+            className={`entryStory ${
+              expanded && entryIndex === index ? "expanded" : ""
+            }`}
+            onClick={toggleExpand}
+          >
+            {entry.story}
+          </p>
+        </div>
+      ))}
       {isMobile && (
         <>
           <button
