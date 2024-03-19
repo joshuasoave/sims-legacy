@@ -5,19 +5,6 @@ import ImageCarousel from "./ImageCarousel";
 const Entries = () => {
   const [entryIndex, setEntryIndex] = useState(0);
   const [expanded, setExpanded] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -34,25 +21,8 @@ const Entries = () => {
     };
   }, [entryIndex]);
 
-  const isFirstEntry = entryIndex === 0;
-  const isLastEntry = entryIndex === entryData.length - 1;
-
   const toggleExpand = () => {
     setExpanded(!expanded);
-  };
-
-  const handlePrevEntry = () => {
-    if (!isFirstEntry) {
-      setEntryIndex(entryIndex - 1);
-      setExpanded(false);
-    }
-  };
-
-  const handleNextEntry = () => {
-    if (!isLastEntry) {
-      setEntryIndex(entryIndex + 1);
-      setExpanded(false);
-    }
   };
 
   return (
@@ -74,23 +44,6 @@ const Entries = () => {
           </p>
         </div>
       ))}
-      {isMobile && (
-        <>
-          <button
-            className={`button prevButton ${isFirstEntry ? "hidden" : ""}`}
-            onClick={handlePrevEntry}
-          >
-            Previous Entry
-          </button>
-
-          <button
-            className={`button nextButton ${isLastEntry ? "hidden" : ""}`}
-            onClick={handleNextEntry}
-          >
-            Next Entry
-          </button>
-        </>
-      )}
     </div>
   );
 };
