@@ -65,13 +65,12 @@ body,
   position: relative;
   background-color: transparent;
   border: none;
-  padding: 0.2rem 2rem;
-  margin: 1rem 2rem;
+  padding: 0.1rem 1rem;
   cursor: pointer;
   align-items: center;
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   font-family: Arial, sans-serif;
   color: white;
@@ -83,7 +82,7 @@ body,
   top: 50%;
   left: 5px;
   transform: translate(-50%, -50%);
-  font-size: 24px;
+  font-size: 14px;
   color: var(--sims-blue);
   transition: transform 0.3s, color 0.3s;
 }
@@ -110,12 +109,14 @@ body,
   padding: 20px;
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
   margin: auto;
   background-color: var(--sims-light-gray);
 }
 
 .castMember {
   width: 100%;
+  height: 100%;
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -422,6 +423,16 @@ img {
     width: 75%;
   }
 
+  .Tabs button {
+    margin: 1rem 2rem;
+    font-size: 18px;
+    padding: 0.2rem 2rem;
+  }
+
+  .Tabs button::before {
+    font-size: 18px;
+  }
+
   .contentContainer {
     width: 60%;
   }
@@ -432,6 +443,7 @@ img {
 
   .castMember {
     width: 100%;
+    height: 100%;
   }
 
   .castMember img {
