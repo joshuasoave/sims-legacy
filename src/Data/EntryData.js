@@ -348,4 +348,45 @@ export const entryData = [
       </div>
     ),
   },
+  {
+    title: "The Second Elimination",
+    date: "2024-03-20",
+    photos: [
+      {
+        photo: "https://i.imgur.com/5HFYbzr.png",
+        caption: "Eloise tries sitting with the castmates",
+      },
+      {
+        photo: "https://i.imgur.com/v49o3Zl.png",
+        caption: "Eloise and Nathaniel up for elimination",
+      },
+      {
+        photo: "https://i.imgur.com/EiPQy1L.png",
+        caption: "Eloise cries about elimination",
+      },
+      {
+        photo: "https://i.imgur.com/NoAkPgD.png",
+        caption: "The paparazzi get one last shot",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          The second elimination round has arrived, and the housemates are on
+          edge. Nathan and Eloise have both been falling out of the spotlight.
+          Eloise tries sitting with the castmates, but they remind her she is
+          one of the two cast members up for elimination. The tension can be cut
+          with a knife as she stands in front of the cast. Who will be
+          eliminated from the competition?
+        </p>
+        <p>
+          Wait what's this? Even though Eloise has more followers, her fame
+          level has dropped to zero from her poor performances in the acting
+          career. People say she's forgettable and unlikable. She is eliminated
+          from the competition. The paparazzi get one last shot of her as she
+          leaves the house.
+        </p>
+      </div>
+    ),
+  },
 ];
