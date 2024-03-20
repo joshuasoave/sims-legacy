@@ -9,7 +9,7 @@ export const entryData = [
       },
       {
         photo: "https://i.imgur.com/BBNdmhP.png",
-        caption: "The gang hones their craft",
+        caption: "The housemates hone their craft",
       },
       {
         photo: "https://i.imgur.com/ivf0heh.png",
@@ -25,7 +25,7 @@ export const entryData = [
       },
       {
         photo: "https://i.imgur.com/ojkOl2k.png",
-        caption: "Gavin performs with celebrity Thorne Blackwood",
+        caption: "Gavin performs with Thorne Blackwood",
       },
     ],
     story: (
@@ -78,8 +78,7 @@ export const entryData = [
       },
       {
         photo: "https://i.imgur.com/am6Q19H.png",
-        caption:
-          "Nathaniel self-publishes his first series of novels and earns a star",
+        caption: "Nathaniel self-publishes his first series of novels",
       },
       {
         photo: "https://i.imgur.com/KNLf7kv.png",
@@ -127,8 +126,7 @@ export const entryData = [
     photos: [
       {
         photo: "https://i.imgur.com/9752M1t.png",
-        caption:
-          "Gavin streams his guitar solo and earns a second star before the elimination ceremony",
+        caption: "Gavin streams his guitar solo",
       },
       {
         photo: "https://i.imgur.com/W6ceKGE.png",
@@ -136,12 +134,11 @@ export const entryData = [
       },
       {
         photo: "https://i.imgur.com/2GU2cJ7.png",
-        caption: "Jasper has more followers and is saved from elimination",
+        caption: "Jasper has more followers ",
       },
       {
         photo: "https://i.imgur.com/Jp8nYVE.png",
-        caption:
-          "Sage screams obscenities as he leaves the house after being eliminated",
+        caption: "Sage screams obscenities as he leaves the house",
       },
     ],
     story: (
@@ -175,20 +172,19 @@ export const entryData = [
     photos: [
       {
         photo: "https://i.imgur.com/eqn0Mm3.png",
-        caption: "Nathaniel gains back his star by publishing a bestseller",
+        caption: "Nathaniel publishinges bestseller",
       },
       {
         photo: "https://i.imgur.com/Cpj7TSS.png",
-        caption: "Cassandra paints a masterpiece and earns a second star",
+        caption: "Cassandra paints a masterpiece",
       },
       {
         photo: "https://i.imgur.com/FXkJiLW.png",
-        caption:
-          "Eloise starts streaming vlogs and gets close to a second star",
+        caption: "Eloise starts streaming vlogs",
       },
       {
         photo: "https://i.imgur.com/Vkfk0xX.png",
-        caption: "Jasper earns a star from streaming workout videos",
+        caption: "Jasper streams workout videos",
       },
     ],
     story: (
@@ -254,6 +250,100 @@ export const entryData = [
           with Eloise close behind them. The competition is heating up, and the
           stakes have never been higher. Who will be the next to go, and who
           will claim the ultimate prize?
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Working Hard or Hardly Working?",
+    date: "2024-03-20",
+    photos: [
+      {
+        photo: "https://i.imgur.com/yH0NlgR.png",
+        caption: "Eloise lands a role in a horror movie",
+      },
+      {
+        photo: "https://i.imgur.com/MS4cMD4.png",
+        caption: "Jasper figts a llama mascot",
+      },
+      {
+        photo: "https://i.imgur.com/sVRIQVB.png",
+        caption: "Jasper's apology video",
+      },
+      {
+        photo: "https://i.imgur.com/MH4j1XZ.png",
+        caption: "Gavin's 40th birthday",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          The third week in The House of Fame has been nothing short of
+          exhilarating! Eloise got a role in a horror movie, and the castmates
+          are thrilled for her. Jasper, on the other hand, fought a llama mascot
+          and is now in hot water. He makes an apology video and it ends up
+          earning him fame. He gets an exclusive deal to stream workout content.
+          The competition's heating up, and the stakes have never been higher.
+          Who will be the next to go, and who will claim the ultimate prize?
+        </p>
+        <p>
+          The castmates are also celebrating Gavin's 40th birthday. Gavin
+          realizes he is getting older and needs to take of his health. He has
+          gain some weight and wants to get back in shape. He asks Jasper to
+          help him with his workout routine. The two of them work out together
+          and rumor has it that they are getting awfly close. Will this help
+          Gavin and Jasper in the competition?
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Beginnings and Endings",
+    date: "2024-03-20",
+    photos: [
+      {
+        photo: "https://i.imgur.com/GUT1YBB.png",
+        caption: "Nathaniel divorces Eloise",
+      },
+      {
+        photo: "https://i.imgur.com/NBhZwnl.png",
+        caption: "Eloise's tearful confession",
+      },
+      {
+        photo: "https://i.imgur.com/RrNSJdc.png",
+        caption: "Eloise struggling at work",
+      },
+      {
+        photo: "https://i.imgur.com/eLSQbJa.png",
+        caption: "Jasper kisses Gavin",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          The fourth week in The House of Fame brings more drama! Nathaniel
+          divorces Eloise after finding out about her affair with Sage. It
+          causes his neck to contort in a way no one has seen before. Eloise is
+          devastated and makes a tearful confession on camera to her followers
+          about the divorce. The video recieves a mixed reaction. Eloise begins
+          struggling at work and is losing followers. Will she be able to bounce
+          back?
+        </p>
+        <p>
+          Jasper kisses Gavin and the two of them are caught on camera. The
+          video goes viral and Jasper's followers skyrocket. The two of them
+          have been spending a lot of time together and it's clear that their
+          relationship is more than just friends. Jasper amasses so many
+          followers that he earns another fame star. Is Jasper using Gavin to
+          get ahead in the competition or is this a real relationship?
+        </p>
+        <p>
+          With Jasper earning his second fame star, he is now tied with Gavin
+          and Cassandra. There is a majority of the housemates with the same
+          fame status. The sim with the lowest fame status of the remaining
+          housemates will be eliminated. Eloise and Nathaniel are both in danger
+          of being eliminated. They are tied at one star each. Who will be the
+          next to go? Stay tuned to find out!
         </p>
       </div>
     ),
