@@ -84,7 +84,6 @@ body,
 }
 
 .Tabs button:hover::before {
-  transform: rotate(360deg);
   color: var(--sims-green);
 }
 
@@ -435,7 +434,7 @@ img {
 
 @media (min-width: 768px) {
   img {
-    max-width: 60%;
+    max-width: 70%;
   }
   .castMember {
     width: 40%;
@@ -464,5 +463,8 @@ img {
     top: 0.5rem;
     right: 0.5rem;
     font-size: 1.5rem;
+  }
+  .TabContent {
+    width: 95%;
   }
 }
