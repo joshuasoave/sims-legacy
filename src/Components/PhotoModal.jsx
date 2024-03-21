@@ -1,8 +1,14 @@
 import React, { useCallback, useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const PhotoModal = ({ isOpen, onClose, photos, caption }) => {
-  const [photoIndex, setPhotoIndex] = useState(0);
+const PhotoModal = ({
+  isOpen,
+  onClose,
+  photos,
+  caption,
+  setPhotoIndex,
+  photoIndex,
+}) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -25,7 +31,7 @@ const PhotoModal = ({ isOpen, onClose, photos, caption }) => {
     } else if (photoIndex === photos.length - 1) {
       setPhotoIndex(0);
     }
-  }, [photoIndex, photos]);
+  }, [photoIndex, photos.length, setPhotoIndex]);
 
   const decreasePhotoIndex = useCallback(() => {
     if (photoIndex === 0) {
@@ -33,7 +39,7 @@ const PhotoModal = ({ isOpen, onClose, photos, caption }) => {
     } else if (photoIndex > 0) {
       setPhotoIndex(photoIndex - 1);
     }
-  }, [photoIndex, photos]);
+  }, [photoIndex, photos.length, setPhotoIndex]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
