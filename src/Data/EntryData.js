@@ -38,7 +38,6 @@ export const entryData = [
           wields an object tied to their path to fame. Curious to know more
           about our cast? Dive into the cast section for the full scoop!
         </p>
-
         <p>
           Inside, the house boasts amenities fit for our stars: cozy beds, a
           communal kitchen, and not one, but two shared bathrooms. The action
@@ -108,8 +107,7 @@ export const entryData = [
           She's gone on set to get into hair and makeup, and the results are
           stunning. Her new edgy look has earned her a fame star, and she's
           ready to take on the world. The competition's heating up, and the
-          housemates are ready to give it their all. Who will be the first to
-          reach five stars and claim the ultimate prize?
+          housemates are ready to give it their all.
         </p>
         <p>
           Unfortunately for Jasper and Sage, there will be an elimination round
@@ -159,9 +157,8 @@ export const entryData = [
           The results are in, and Jasper has more followers, saving him from
           elimination. Sage is eliminated from the competition, and he's not
           happy about it. He screams obscenities as he leaves the house, and the
-          rest of the housemates are left to pick up the pieces. The competition
-          is heating up, and the stakes have never been higher. Who will be the
-          next to go, and who will claim the ultimate prize?
+          rest of the housemates are left to pick up the pieces. Can they keep
+          it together and continue to chase their dreams?
         </p>
       </div>
     ),
@@ -172,7 +169,7 @@ export const entryData = [
     photos: [
       {
         photo: "https://i.imgur.com/eqn0Mm3.png",
-        caption: "Nathaniel publishinges bestseller",
+        caption: "Nathaniel publishes a bestseller",
       },
       {
         photo: "https://i.imgur.com/Cpj7TSS.png",
@@ -206,11 +203,6 @@ export const entryData = [
           been streaming vlogs and getting close to a second star of her own.
           Jasper's been making waves in the fitness world, earning a star from
           streaming workout videos.
-        </p>
-        <p>
-          The competition's heating up, and the housemates are ready to give it
-          their all. Who will be the first to reach five stars and claim the
-          ultimate prize? Stay tuned to find out!
         </p>
       </div>
     ),
@@ -264,7 +256,7 @@ export const entryData = [
       },
       {
         photo: "https://i.imgur.com/MS4cMD4.png",
-        caption: "Jasper figts a llama mascot",
+        caption: "Jasper fights a llama mascot",
       },
       {
         photo: "https://i.imgur.com/sVRIQVB.png",
@@ -278,13 +270,12 @@ export const entryData = [
     story: (
       <div>
         <p>
-          The third week in The House of Fame has been nothing short of
-          exhilarating! Eloise got a role in a horror movie, and the castmates
-          are thrilled for her. Jasper, on the other hand, fought a llama mascot
-          and is now in hot water. He makes an apology video and it ends up
-          earning him fame. He gets an exclusive deal to stream workout content.
-          The competition's heating up, and the stakes have never been higher.
-          Who will be the next to go, and who will claim the ultimate prize?
+          The third week in The House of Fame brings thrills! Eloise gets a role
+          in a horror movie, and the castmates are thrilled for her. Jasper, on
+          the other hand, fights a llama mascot and is now in hot water. His
+          actions get him kicked off the hockey team. He makes an apology video
+          and it ends up earning him fame. He gets an exclusive deal to stream
+          workout content.
         </p>
         <p>
           The castmates are also celebrating Gavin's 40th birthday. Gavin
@@ -321,13 +312,13 @@ export const entryData = [
     story: (
       <div>
         <p>
-          The fourth week in The House of Fame brings more drama! Nathaniel
-          divorces Eloise after finding out about her affair with Sage. It
-          causes his neck to contort in a way no one has seen before. Eloise is
-          devastated and makes a tearful confession on camera to her followers
-          about the divorce. The video recieves a mixed reaction. Eloise begins
-          struggling at work and is losing followers. Will she be able to bounce
-          back?
+          The fourth week in The House of Fame turns up the drama! Nathaniel
+          finalizes his divorce from Eloise after finding out about her affair
+          with Sage. It causes his neck to contort in a way no one has seen
+          before. Eloise is devastated and makes a tearful confession on camera
+          to her followers about the divorce. The video recieves a mixed
+          reaction. Eloise begins struggling at work and is losing followers.
+          Will she be able to bounce back?
         </p>
         <p>
           Jasper kisses Gavin and the two of them are caught on camera. The
@@ -384,6 +375,87 @@ export const entryData = [
           level has dropped to zero from her poor performances in the acting
           career. People say she's forgettable and unlikable. She is eliminated
           from the competition. The paparazzi get one last shot of her as she
+          leaves the house.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Award Season",
+    date: "2024-03-20",
+    photos: [
+      {
+        photo: "https://i.imgur.com/HW1bXzs.png",
+        caption: "Nathaniel gets a second star",
+      },
+      {
+        photo: "https://i.imgur.com/IFJIkaz.png",
+        caption: "The fans go crazy",
+      },
+      {
+        photo: "https://i.imgur.com/Fa14vqG.png",
+        caption: "Cassandra wins an award for digital editing",
+      },
+      {
+        photo: "https://i.imgur.com/AP4CZi5.png",
+        caption: "Gavin wins an award for his song",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          Nathaniel has been working hard, staying up all night, writing. He
+          earns a second star for his fantasy bestseller about a mersim vampire
+          romance. Bookstores across the nation sellout of his book. Cassandra
+          and Gavin discover they have been nominated for awards. They've been
+          invited to a glamorous ceremony at Del Sol Records.
+        </p>
+        <p>
+          Gavin asks Jasper to be his plus one. Cassandra decides to go alone to
+          the event. The fans go wild outside of the venue. They ask for photos
+          and autographs. Cassandra wins an award for digital editing. She still
+          loves painting, but creating videos has become a new passion for her.
+          Gavin wins an award for his song. The hearfelt ballad is rumored to
+          have been inspired by Jasper. The housemates are thrilled for their
+          friends, but the competition is heating up. Who will be the next to
+          go, and who will become a global superstar?
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Elimination",
+    date: "2024-03-20",
+    photos: [
+      {
+        photo: "https://i.imgur.com/VBsxWza.png",
+        caption: "Cassandra replies to hate comments",
+      },
+      {
+        photo: "https://i.imgur.com/Os84cfy.png",
+        caption: "Jasper beats Nathaniel in followers",
+      },
+      {
+        photo: "https://i.imgur.com/bfkwRS8.png",
+        caption: "Nathaniel strikes a pose",
+      },
+    ],
+    story: (
+      <div>
+        <p>
+          After the awards ceremony, the housemates are back to the grind.
+          Cassandra gets a lot of hate comments on her social media. They say
+          she should stick to painting and not try to be a digital editor. She
+          responds by roasting them and gaining more followers for her replies
+          to the haters. She is now a three star celebrity.{" "}
+        </p>
+        <p>
+          Nathaniel and Jasper are tied at two stars each. However, Jasper has
+          more than three times the followers Nathaniel has. Even though Jasper
+          has been up for elimination twice, he has managed to gain a lot of
+          followers. Nathaniel has been working hard, but he has been losing
+          followers. Jasper celebrates by throwing money from his fitness videos
+          in the air. Nathaniel strikes one last a pose for the camera before he
           leaves the house.
         </p>
       </div>
