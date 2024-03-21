@@ -1,10 +1,19 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import PhotoModal from "./PhotoModal";
 
 const ImageCarousel = ({ photos = [] }) => {
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (photoIndex < photos.length - 1) {
+        setPhotoIndex(photoIndex + 1);
+      } else {
+        setPhotoIndex(0);
+      }
+    }, 3500);
+    return () => clearInterval(interval);
+  }, [photoIndex, photos]);
 
   useEffect(() => {
     setPhotoIndex(0);
@@ -53,18 +62,12 @@ const ImageCarousel = ({ photos = [] }) => {
       {photos?.length > 0 && (
         <>
           <div className="imageWrapper">
-            <button onClick={decreasePhotoIndex} className="arrowButton">
-              <FaChevronLeft className="arrowIcon" />
-            </button>
             <img
               src={photos[photoIndex]?.photo}
               alt={photos[photoIndex]?.caption}
               className="carouselImage"
-              onClick={openModal} // Open modal on image click
+              onClick={openModal}
             />
-            <button onClick={increasePhotoIndex} className="arrowButton">
-              <FaChevronRight className="arrowIcon" />
-            </button>
           </div>
           <PhotoModal
             isOpen={isModalOpen}
