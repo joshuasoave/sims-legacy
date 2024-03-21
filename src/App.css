@@ -224,7 +224,7 @@ li {
   text-align: left;
   align-items: center;
   flex-direction: column;
-  padding: 1.6rem;
+  padding: 1.2rem;
   background-color: var(--sims-light-gray);
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
