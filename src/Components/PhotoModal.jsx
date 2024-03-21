@@ -3,6 +3,21 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const PhotoModal = ({ isOpen, onClose, photos, caption }) => {
   const [photoIndex, setPhotoIndex] = useState(0);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsSmallScreen(true);
+      } else {
+        setIsSmallScreen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const increasePhotoIndex = useCallback(() => {
     if (photoIndex < photos.length - 1) {
@@ -50,10 +65,16 @@ const PhotoModal = ({ isOpen, onClose, photos, caption }) => {
         <p>{photos[photoIndex].caption}</p>
         <div className="modalButtonContainer">
           <button onClick={decreasePhotoIndex} className="arrowButton">
-            <FaChevronLeft className="arrowIcon" />
+            <FaChevronLeft
+              className="arrowIcon"
+              size={isSmallScreen ? 10 : 25}
+            />
           </button>
           <button onClick={increasePhotoIndex} className="arrowButton">
-            <FaChevronRight className="arrowIcon" />
+            <FaChevronRight
+              className="arrowIcon"
+              size={isSmallScreen ? 10 : 25}
+            />
           </button>
         </div>
       </div>

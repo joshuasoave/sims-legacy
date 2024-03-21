@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Modal = ({
@@ -8,6 +8,21 @@ const Modal = ({
   decreaseCastIndex,
   increaseCastIndex,
 }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsSmallScreen(true);
+      } else {
+        setIsSmallScreen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   if (!isOpen) return null;
 
   return (
@@ -15,7 +30,7 @@ const Modal = ({
       <div className="modalContent" onClick={(e) => e.stopPropagation()}>
         <div className="closeButtonContainer">
           <button onClick={onClose} className="closeButton">
-            X
+            x
           </button>
         </div>
         <div className="imageContainer">
@@ -31,10 +46,16 @@ const Modal = ({
         </div>
         <div className="modalButtonContainer">
           <button onClick={decreaseCastIndex} className="arrowButton">
-            <FaChevronLeft className="arrowIcon" />
+            <FaChevronLeft
+              className="arrowIcon"
+              size={isSmallScreen ? 10 : 25}
+            />
           </button>
           <button onClick={increaseCastIndex} className="arrowButton">
-            <FaChevronRight className="arrowIcon" />
+            <FaChevronRight
+              className="arrowIcon"
+              size={isSmallScreen ? 10 : 25}
+            />
           </button>
         </div>
       </div>
