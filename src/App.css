@@ -15,13 +15,16 @@ body,
   color: var(--sims-dark-gray);
   font-family: Arial, sans-serif;
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1903d13-1bf9-4a89-949d-c91802ddb04a/ddvn7v1-cff494c5-4f67-42b5-a3e6-d81ec6f6c84a.png/v1/fill/w_1131,h_707/grid_of_ts3_plumbobs_by_titanicbobo_ddvn7v1-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZjE5MDNkMTMtMWJmOS00YTg5LTk0OWQtYzkxODAyZGRiMDRhXC9kZHZuN3YxLWNmZjQ5NGM1LTRmNjctNDJiNS1hM2U2LWQ4MWVjNmY2Yzg0YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gRUyxhRTgWjVGqRvHkp9qMrgEgT7mLCP-m5-COITIUA");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
@@ -41,9 +44,8 @@ body,
   flex-direction: column;
   box-sizing: border-box;
   width: 90%;
-  justify-content: center;
   align-items: center;
-  margin: auto;
+  justify-content: center;
 }
 
 .Tabs {
@@ -96,12 +98,12 @@ body,
   content: "\2605";
   color: var(--sims-green);
 }
+
 /* Cast info styles */
 .castInfoContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -137,22 +139,34 @@ body,
 .contentContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   margin: auto;
+  justify-content: flex-end;
   background-color: var(--sims-light-gray);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 1rem;
-  width: 100%;
-  margin: 1rem;
+  padding: 1.7rem;
+  width: 80%;
+  margin: 1.5rem;
   border: 2px solid var(--sims-blue);
+}
+
+.contentContainer p {
+  margin: 0.7rem;
+  padding: 0.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
 }
 
 li {
   list-style: none;
-  margin: 1rem;
+  margin: 0.7rem;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
 }
 
 /* Image Wrapper */
@@ -244,6 +258,11 @@ li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 2px solid var(--sims-blue);
   cursor: pointer;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+  padding: 1.3rem;
+  line-height: 1.5;
 }
 
 .entry h2 {
@@ -284,11 +303,12 @@ li {
   font-family: "Arial", sans-serif;
   transition: background-color 0.3s;
   position: absolute;
-  top: 0.3rem;
-  right: 0.3rem;
+  margin: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem;
+  z-index: 1000;
 }
 
 .modalOverlay .closeButtonContainer {
@@ -315,8 +335,8 @@ li {
 .modalContent {
   background-color: #fff;
   border: 2px solid var(--sims-blue);
-  padding: 2rem;
-  max-width: 80%;
+  padding: 1.5rem;
+  max-width: 90%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   justify-content: center;
@@ -339,9 +359,7 @@ li {
 
 /* Modal Image */
 .modalContent img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
+  width: 100%;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -427,6 +445,8 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 1rem;
+  text-align: justify;
 }
 
 img {
@@ -434,9 +454,15 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.photoCaption {
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0.2rem;
+}
+
 @media (min-width: 768px) {
   img {
-    max-width: 70%;
+    max-width: 80%;
   }
   .castMember {
     width: 40%;
@@ -450,11 +476,11 @@ img {
     margin: 1rem auto;
   }
   .modalContent img {
-    max-width: 70%;
+    max-width: 75%;
   }
   .modalContent {
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
   }
   .modalContent button {
     padding: 0.5rem;
@@ -465,6 +491,7 @@ img {
     top: 0.5rem;
     right: 0.5rem;
     font-size: 1.5rem;
+    padding: 1rem;
   }
   .TabContent {
     width: 95%;

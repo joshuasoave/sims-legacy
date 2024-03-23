@@ -13,7 +13,9 @@ const Rules = () => {
           are aquired
         </li>
         <li>Sims all must live on the same lot</li>
-        <li>Romantic partners are allowed, even celebrities</li>
+        <li>
+          Romantic partners are allowed, even celebrities or other cast members
+        </li>
         <li>No pets or children</li>
         <li>The challenge will be played on a 64x64 lot in Del Sol Valley</li>
         <li>The challenge will end when the first sim reaches 5 stars</li>
@@ -25,7 +27,6 @@ const Rules = () => {
           paintings or novels
         </li>
         <li>Only one sim per career</li>
-        <li>Only one sim per method of gaining fame</li>
         <li>
           When a majority of sims have reached the same fame status, one of the
           bottom two sims will be eliminated
