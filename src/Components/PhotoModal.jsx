@@ -68,7 +68,7 @@ const PhotoModal = ({
         <div className="imageContainer">
           <img src={photos[photoIndex].photo} alt={caption} />
         </div>
-        <p>{photos[photoIndex].caption}</p>
+        <p className="photoCaption">{photos[photoIndex].caption}</p>
         <div className="modalButtonContainer">
           <button onClick={decreasePhotoIndex} className="arrowButton">
             <FaChevronLeft

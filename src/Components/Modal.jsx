@@ -30,7 +30,7 @@ const Modal = ({
       <div className="modalContent" onClick={(e) => e.stopPropagation()}>
         <div className="closeButtonContainer">
           <button onClick={onClose} className="closeButton">
-            x
+            X
           </button>
         </div>
         <div className="imageContainer">

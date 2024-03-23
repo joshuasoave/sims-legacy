@@ -65,7 +65,8 @@ const ImageCarousel = ({ photos = [], prevPhotoIndex }) => {
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
+  const closeModal = (event) => {
+    event.stopPropagation();
     setIsModalOpen(false);
   };
 

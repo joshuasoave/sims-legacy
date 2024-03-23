@@ -6,32 +6,32 @@ const ChallengeInfo = () => {
     <div className="contentContainer">
       <h2>Let's Play Info</h2>
       <p>
-        With these Sims 4 Let's Play entries, I will be playing through various
-        aspects of the game. Each challenge will have its own rules and goals.
-        Please feel free to participate in the challenges yourself and share
-        your progress. I would love to see how you play the game!
+        My Sims journey began back with Sims 2. I was a young teen, and I was
+        hooked. I loved creating families, building homes, and playing out their
+        stories. I've always been a storyteller at heart, and the Sims provided
+        the perfect canvas for my imagination to run wild. I played every
+        expansion from Sims 2 and most of Sims 3. I skipped Sims 4, but I'm
+        back! I'm excited to share my journey with you all. I hope you enjoy
+        watching my Sims' stories unfold as much as I enjoy playing them.
       </p>
+      <h2>Current Challenge</h2>
       <p>
-        The current Lets Play Challenge is called The Road to Fame. This
-        challenge revolves around the Get Famous expansion pack. The goal is to
-        become a 5 star celebrity. There will be various sims in the household,
-        each with their own unique way of gaining fame. The first sim to reach 5
-        stars wins.
+        I'm currently playing the House of Fame challenge. This challenge is
+        based on the Sims 4 Get Famous expansion pack. The challenge is to take
+        six Sims and have them compete for fame. The Sims live in a house
+        together and must complete tasks to earn fame points. The first sim to
+        reach global superstar status wins. I'll be sharing updates on my
+        progress and the drama that unfolds along the way.
       </p>
+      <h2>Future Plans</h2>
       <p>
-        The rules are simple. The first sim to become a 5 star celebrity wins.
-        Each sim will have a unique career or skill. One simstagram post is
-        allowed each day.
-      </p>
-      <p>
-        Sims will be eliminated if a majority of the sims have reached the same
-        fame status. The sim with the lowest fame status will be eliminated. If
-        two sims have the same fame status for elimination, the sim with the
-        lowest followers will be eliminated.
-      </p>
-      <p>
-        Follow along with the challenge and see who will be the first to reach 5
-        stars and claim the ultimate prize!
+        I have a lot of ideas for future challenges and stories. I'm excited to
+        explore the new expansion packs and create new Sims to play with. I'm
+        also looking forward to sharing more of my Sims journey with you all.
+        I've never done a legacy challenge and am interested in trying one. I'd
+        also like to try an Apocalypse Challenge from Sims 2 if those still
+        exist. I hope you'll join me on this adventure and share your own
+        stories and challenges along the way.
       </p>
     </div>
   );
