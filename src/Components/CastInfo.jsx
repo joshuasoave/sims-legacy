@@ -1,19 +1,27 @@
-import React, { useEffect, useState } from "react";
-import { castInfo } from "../Data/CastInfo";
+import React, { useEffect, useState, useCallback } from "react";
+import castInfoData from "../Data/CastInfo";
 import Modal from "./Modal";
 
 export const CastInfo = () => {
   const [selectedCard, setSelectedCard] = useState(null);
+  const [castInfo, setCastInfo] = useState(castInfoData);
 
-  const handleCardClick = (index) => {
-    if (index < 0) {
-      setSelectedCard(castInfo.length - 1);
-    } else if (index >= castInfo.length) {
-      setSelectedCard(0);
-    } else {
-      setSelectedCard(index);
-    }
-  };
+  useEffect(() => {
+    setCastInfo(castInfoData);
+  }, []);
+
+  const handleCardClick = useCallback(
+    (index) => {
+      if (index < 0) {
+        setSelectedCard(castInfo.length - 1);
+      } else if (index >= castInfo.length) {
+        setSelectedCard(0);
+      } else {
+        setSelectedCard(index);
+      }
+    },
+    [castInfo.length]
+  );
 
   const handleCloseModal = () => {
     setSelectedCard(null);
@@ -46,22 +54,23 @@ export const CastInfo = () => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [selectedCard]);
+  }, [castInfo.length, handleCardClick, selectedCard]);
 
   return (
     <div className="castInfoContainer">
-      {castInfo.map((castMember, index) => (
-        <div
-          key={index}
-          className="castMember"
-          onClick={() => handleCardClick(index)}
-        >
-          <h3>{castMember.name}</h3>
-          <p>{castMember.occupation}</p>
-          <img src={castMember.img} alt={castMember.name} />
-          <p>{castMember.description}</p>
-        </div>
-      ))}
+      {castInfo &&
+        castInfo.length > 0 &&
+        castInfo?.map((castMember, index) => (
+          <div
+            key={index}
+            className="castMember"
+            onClick={() => handleCardClick(index)}
+          >
+            <h3>{castMember.name}</h3>
+            <img src={castMember.img} alt={castMember.name} />
+            <p>{castMember.description}</p>
+          </div>
+        ))}
       <Modal
         isOpen={selectedCard !== null}
         onClose={handleCloseModal}

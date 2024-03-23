@@ -1,0 +1,72 @@
+[
+  {
+    "chapter": 1,
+    "data": {
+      "title": "Welcome to The House of Fame!",
+      "date": "2024-03-18",
+      "chapter": 1,
+      "entries": [
+        {
+          "title": "The Beginning",
+          "photo": "https://i.imgur.com/YRhqCPn.png",
+          "caption": "And so it all begins, a fateful day in The House of Fame! Six hopefuls were handpicked to embark on a quest for global stardom. Nestled in Del Sol Valley, on a sprawling 64x64 lot, our sims will compete to become a global superstar. The first to reach 5-star celebrity status will claim the ultimate prize!"
+        },
+        {
+          "title": "The Creative Circle",
+          "photo": "https://i.imgur.com/BBNdmhP.png",
+          "caption": "The cast will be spending most of their time honing their craft in the the creative circle. Each sim has an object tied to their path to fame. They all have a different skill they will focus on to aquire fame. Curious to know more about our cast? Dive into the cast section for the full scoop!"
+        },
+        {
+          "title": "The First Night",
+          "photo": "https://i.imgur.com/ivf0heh.png",
+          "caption": "On the first night, action unfolds in the creative circle. New friendships blossom and drama brews. Keep an eye on Eloise and Sage, who are growing closer by the day, despite both being married. Will their secret affair be exposed? Or will they manage to keep it under wraps? Only time will tell!"
+        },
+        {
+          "title": "Painting the Town",
+          "photo": "https://i.imgur.com/QCbCOB5.png",
+          "caption": "The second day arrives, and the contestants are primed for their journey. But as night falls, Cassandra stumbles upon Eloise and Sage's secret rendezvous in the creative circle. Seizing the moment, she immortalizes their affair in a scandalous painting, earning fame points aplenty. But trouble brews as Nathaniel learns the truth and delivers a fiery slap to Eloise!"
+        },
+        {
+          "title": "Celebrity Sighting",
+          "photo": "https://i.imgur.com/ojkOl2k.png",
+          "caption": "As dawn breaks, Gavin hits the town and finds himself in the company of A-lister Thorne Blackwood. A simple photo request turns into a thrilling invitation to share the stage. With this unexpected turn, Gavin inches closer to Cassandra in the fame race. The competition's heating up, and the rest of the house better keep pace if they aim to claim the ultimate prize!"
+        }
+      ]
+    }
+  },
+  {
+    "chapter": 2,
+    "data": {
+      "title": "Week One",
+      "date": "2024-03-19",
+      "chapter": 2,
+      "entries": [
+        {
+          "title": "Cassandra's Star",
+          "photo": "https://i.imgur.com/oXNX3jJ.png",
+          "caption": "Cassandra earns a fame star from her paintings"
+        },
+        {
+          "title": "Nathaniel's Novels",
+          "photo": "https://i.imgur.com/am6Q19H.png",
+          "caption": "Nathaniel self-publishes his first series of novels"
+        },
+        {
+          "title": "Gavin's Music",
+          "photo": "https://i.imgur.com/KNLf7kv.png",
+          "caption": "Gavin earns a star from his work as a musician"
+        },
+        {
+          "title": "Eloise's Makeover",
+          "photo": "https://i.imgur.com/2fBAZEX.png",
+          "caption": "Eloise goes on set to get into hair and makeup"
+        },
+        {
+          "title": "Eloise's Star",
+          "photo": "https://i.imgur.com/ojNZxd0.png",
+          "caption": "Eloise earns a star for her more edgy look"
+        }
+      ]
+    }
+  }
+]

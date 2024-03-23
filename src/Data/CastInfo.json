@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Gavin Stonehart",
+    "img": "https://i.imgur.com/wD7ounl.png",
+    "occupation": "Musician",
+    "description": "Gavin is a musician in Del Sol Valley. He is currently writing his sophomore album."
+  },
+  {
+    "name": "Jasper Hawthorne",
+    "img": "https://i.imgur.com/s7NKz7F.png",
+    "occupation": "Hockey Player",
+    "description": "Jasper is an amateur hockey player in Del Sol Valley. He also streams workout routines."
+  },
+  {
+    "name": "Eloise Argent",
+    "img": "https://i.imgur.com/B6sjuxt.png",
+    "occupation": "Actress",
+    "description": "Eloise is an actress in Del Sol Valley. She is always looking for her next big role."
+  },
+  {
+    "name": "Cassandra Belladonna",
+    "img": "https://i.imgur.com/scErDwF.png",
+    "occupation": "Painter",
+    "description": "Cassandra is a painter in Del Sol Valley. She looks for inspiration from nature."
+  },
+  {
+    "name": "Nathaniel Toro",
+    "img": "https://i.imgur.com/xIlSYt5.png",
+    "occupation": "Author",
+    "description": "Nathaniel is an author in Del Sol Valley. He draws from many experiences in his writing."
+  },
+  {
+    "name": "Sage Brimstone",
+    "img": "https://i.imgur.com/QsHhDVm.png",
+    "occupation": "Video Game Streamer",
+    "description": "Sage is a full-time streamer in Del Sol Valley. He does programming and video games."
+  }
+]
