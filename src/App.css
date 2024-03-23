@@ -510,6 +510,17 @@ img {
   flex: 1 1 auto;
 }
 
+.previousButton:hover,
+.nextButton:hover {
+  background-color: var(--sims-green);
+}
+
+.entry img {
+  max-width: 60%;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: 768px) {
   img {
     max-width: 80%;
