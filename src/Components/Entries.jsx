@@ -1,37 +1,53 @@
-import React, { useState } from "react";
-import { entryData } from "../Data/EntryData";
-import ImageCarousel from "./ImageCarousel";
+import * as React from "react";
+import * as entryData from "../Data/Entries";
+import { Chapter } from "./Chapter";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const Entries = () => {
-  const photoIndex = 0;
-  const [expandedIndex, setExpandedIndex] = useState(null);
+export const Entries = ({ setActiveChapter }) => {
+  const [data, setData] = React.useState(entryData);
+  const [activeIndex, setActiveIndex] = React.useState(0);
 
-  const toggleExpand = (index) => {
-    setExpandedIndex(index === expandedIndex ? null : index);
+  React.useEffect(() => {
+    setData(entryData);
+    setActiveChapter(data[activeIndex]?.data);
+  }, [data, activeIndex, setActiveChapter]);
+
+  const goToNextChapter = () => {
+    if (activeIndex < data.length - 1) {
+      setActiveIndex(activeIndex + 1);
+    }
+  };
+
+  const goToPreviousChapter = () => {
+    if (activeIndex > 0) {
+      setActiveIndex(activeIndex - 1);
+    }
   };
 
   return (
-    <div className="entryContentContainer">
-      {entryData.map((entry, index) => (
-        <div key={index} className={`entry`}>
-          <h2>{entry.title}</h2>
-          <ImageCarousel photos={entry.photos} prevPhotoIndex={photoIndex} />
-          <div
-            className={`entryStory ${
-              expandedIndex === index ? "expanded" : ""
-            }`}
-            onClick={() => toggleExpand(index)}
-            style={{
-              cursor: "pointer",
-              overflow: "hidden",
-            }}
-          >
-            {entry.story}
-          </div>
-        </div>
-      ))}
+    <div className="entriesContainer">
+      <div className="chapterNavigation">
+        {activeIndex > 0 ? (
+          <button className="previousButton" onClick={goToPreviousChapter}>
+            <FaChevronLeft size={20} />
+          </button>
+        ) : (
+          <div className="buttonPlaceholder"></div>
+        )}
+
+        {data && data.length > 0 && (
+          <Chapter chapter={data[activeIndex].data} />
+        )}
+
+        {activeIndex < data.length - 1 ? (
+          <button className="nextButton" onClick={goToNextChapter}>
+            <FaChevronRight size={20} />
+          </button>
+        ) : (
+          <div className="buttonPlaceholder"></div>
+        )}
+      </div>
+      {!data || (data.length === 0 && <p>No entries yet</p>)}
     </div>
   );
 };
-
-export default Entries;

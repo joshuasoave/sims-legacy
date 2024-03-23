@@ -19,6 +19,7 @@ body,
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  overflow-x: hidden;
 }
 
 .App {
@@ -467,6 +468,46 @@ img {
   font-size: 0.8rem;
   font-style: italic;
   padding: 0.2rem;
+}
+
+.chapterHeading {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  text-align: center;
+  color: var(--sims-light-gray);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.previousButton,
+.nextButton {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--sims-blue);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s;
+  margin: rem;
+}
+
+.entriesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapterNavigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navigationSpacer {
+  flex: 1 1 auto;
 }
 
 @media (min-width: 768px) {
