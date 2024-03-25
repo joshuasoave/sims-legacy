@@ -15,39 +15,32 @@ export const Entries = ({ setActiveChapter }) => {
   const goToNextChapter = () => {
     if (activeIndex < data.length - 1) {
       setActiveIndex(activeIndex + 1);
+    } else if (activeIndex === data.length - 1) {
+      setActiveIndex(0);
     }
   };
 
   const goToPreviousChapter = () => {
     if (activeIndex > 0) {
       setActiveIndex(activeIndex - 1);
+    } else if (activeIndex === 0) {
+      setActiveIndex(data.length - 1);
     }
   };
 
   return (
-    <div className="entriesContainer">
+    <>
       <div className="chapterNavigation">
-        {activeIndex > 0 ? (
-          <button className="previousButton" onClick={goToPreviousChapter}>
-            <FaChevronLeft size={20} />
-          </button>
-        ) : (
-          <div className="buttonPlaceholder"></div>
-        )}
-
-        {data && data.length > 0 && (
-          <Chapter chapter={data[activeIndex].data} />
-        )}
-
-        {activeIndex < data.length - 1 ? (
-          <button className="nextButton" onClick={goToNextChapter}>
-            <FaChevronRight size={20} />
-          </button>
-        ) : (
-          <div className="buttonPlaceholder"></div>
-        )}
+        <button id={"previousButton"} onClick={goToPreviousChapter}>
+          <FaChevronLeft size={20} />
+        </button>
+        <button id={"nextButton"} onClick={goToNextChapter}>
+          <FaChevronRight size={20} />
+        </button>
       </div>
-      {!data || (data.length === 0 && <p>No entries yet</p>)}
-    </div>
+      <div className="entriesContainer">
+        <Chapter chapter={data[activeIndex]?.data} />
+      </div>
+    </>
   );
 };
