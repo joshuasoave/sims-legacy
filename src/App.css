@@ -49,7 +49,6 @@ body,
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
   margin-top: 1rem;
 }
 
@@ -222,6 +221,9 @@ li {
 /* Arrow Icon */
 .arrowButton {
   color: var(--sims-blue);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 /* Disable pointer events for disabled button */
@@ -246,7 +248,7 @@ li {
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 2px solid var(--sims-blue);
-  margin: 1rem;
+  margin: 1rem auto;
 }
 
 .entryStory {
@@ -267,6 +269,10 @@ li {
   line-height: 1.3;
   height: auto; /* Adjust based on your design */
   transition: all 0.3s ease;
+  min-width: 100%;
+  max-width: 100%;
+  text-align: center;
+  min-height: 100%;
 }
 
 .expanded {
@@ -299,6 +305,44 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.buttonPlaceholder {
+  width: 96px; /* Example width, adjust based on your actual button size */
+  height: 36px; /* Example height, adjust based on your actual button size */
+  background-color: transparent; /* Ensures the placeholder is invisible */
+  border: none; /* Removes any border */
+  display: inline-block; /* Ensures it takes up space like a button */
+}
+
+.entriesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapterNavigation {
+  display: flex;
+  justify-content: space-between; /* Aligns children to opposite ends */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.previousButton,
+.nextButton {
+  background-color: var(--sims-blue);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.previousButton:hover,
+.nextButton:hover {
+  background-color: var(--sims-green);
 }
 
 .closeButton {
@@ -421,11 +465,6 @@ li {
   background-color: var(--sims-green);
 }
 
-/* Hidden Button */
-.hidden {
-  visibility: hidden;
-}
-
 .contentContainer h2 {
   margin: 0;
   text-align: center;
@@ -479,12 +518,31 @@ img {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.previousButton,
-.nextButton {
-  position: fixed;
+.chapterTitle {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border: 2px solid var(--sims-blue);
+  padding: 1.5rem;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
   z-index: 1000;
-  top: 50%;
-  transform: translateY(-50%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+#previousButton,
+#nextButton {
+  z-index: 1000;
   background-color: var(--sims-blue);
   color: #fff;
   border: none;
@@ -493,32 +551,55 @@ img {
   cursor: pointer;
   font-family: "Arial", sans-serif;
   transition: background-color 0.3s;
-  margin: rem;
 }
 
 .entriesContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
 }
 
 .chapterNavigation {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-}
-.navigationSpacer {
-  flex: 1 1 auto;
+  align-items: center;
+  width: 100%;
 }
 
-.previousButton:hover,
-.nextButton:hover {
+#previousButton:hover,
+#nextButton:hover {
   background-color: var(--sims-green);
 }
 
 .entry img {
-  max-width: 60%;
+  max-width: 90%;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entry h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.chapterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sims-light-gray);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--sims-blue);
+  width: 100%;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: var(--sims-light-gray);
+  color: var(--sims-dark-gray);
 }
 
 @media (min-width: 768px) {
@@ -533,8 +614,7 @@ img {
     margin: 0 3rem;
   }
   .entry {
-    width: 60%;
-    margin: 1rem auto;
+    width: 80%;
   }
   .modalContent img {
     max-width: 75%;
@@ -556,5 +636,9 @@ img {
   }
   .TabContent {
     width: 95%;
+  }
+  .buttonPlaceholder {
+    width: 110px; /* Adjust based on your actual larger button size */
+    height: 40px; /* Adjust based on your actual larger button size */
   }
 }

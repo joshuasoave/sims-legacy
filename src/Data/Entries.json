@@ -68,5 +68,40 @@
         }
       ]
     }
+  },
+  {
+    "chapter": 3,
+    "data": {
+      "title": "Week Two",
+      "date": "2024-03-26",
+      "chapter": 3,
+      "entries": [
+        {
+          "title": "Gavin's Music",
+          "photo": "https://i.imgur.com/BytgTBm.png",
+          "caption": "Gavin earns a second star livestreaming his music"
+        },
+        {
+          "title": "Jasper v. Sage",
+          "photo": "https://i.imgur.com/W6ceKGE.png",
+          "caption": "Elimination ceremony"
+        },
+        {
+          "title": "Sage Eliminated",
+          "photo": "https://i.imgur.com/Jp8nYVE.png",
+          "caption": "Sage screams obscenities as he is eliminated"
+        },
+        {
+          "title": "Jasper's First Star",
+          "photo": "https://i.imgur.com/Vkfk0xX.png",
+          "caption": "Jasper earns his first star for his fitness"
+        },
+        {
+          "title": "Cassandra's Masterpiece",
+          "photo": "https://i.imgur.com/Cpj7TSS.png",
+          "caption": "Cassandra earns a second star for her masterpiece"
+        }
+      ]
+    }
   }
 ]
