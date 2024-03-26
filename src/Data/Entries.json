@@ -44,27 +44,27 @@
         {
           "title": "Cassandra's Star",
           "photo": "https://i.imgur.com/oXNX3jJ.png",
-          "caption": "Cassandra earns a fame star from her paintings"
+          "caption": "Cassandra paints her first masterpiece and earns a fame star for her work. It depicts the human form in all of its beauty. Her goal is to improve body acceptance through art. She's off to a strong start with this piece!"
         },
         {
           "title": "Nathaniel's Novels",
           "photo": "https://i.imgur.com/am6Q19H.png",
-          "caption": "Nathaniel self-publishes his first series of novels"
+          "caption": "Despite the drama with Eloise, Nathaniel is hard at work on his latest novel. He's determined to make a name for himself in the literary world. He earns a fame star from the series of childrens novels he publishes about a two finned shark."
         },
         {
           "title": "Gavin's Music",
           "photo": "https://i.imgur.com/KNLf7kv.png",
-          "caption": "Gavin earns a star from his work as a musician"
+          "caption": "At work, Gavin is faced with a challenge decision to shut down a show or play an encore. The ban was supposed to stop playing at midnight, but the crowd is having such a good time. He plays an encore and earns a fame star from how the crowd raves about his performance."
         },
         {
           "title": "Eloise's Makeover",
           "photo": "https://i.imgur.com/2fBAZEX.png",
-          "caption": "Eloise goes on set to get into hair and makeup"
+          "caption": "Eloise goes on set to get into hair and makeup. She tells the stylists she wants a new look. Something that will make people take her more seriously in the competition. Eloise sits back and trusts the stylists."
         },
         {
           "title": "Eloise's Star",
           "photo": "https://i.imgur.com/ojNZxd0.png",
-          "caption": "Eloise earns a star for her more edgy look"
+          "caption": "The stylists give Eloise a more edgy look to embrace her villain status on the show. She earns a fame star for the polarizing reactions she gets to her new look. Eloise's new look is all fashion magazines can talk about. She's ready to take on the competition with her new style."
         }
       ]
     }
@@ -79,27 +79,62 @@
         {
           "title": "Gavin's Music",
           "photo": "https://i.imgur.com/BytgTBm.png",
-          "caption": "Gavin earns a second star livestreaming his music"
+          "caption": "Gavin learns the secret to getting his music out into the world - the internet. He streams his new songs to thousands of fans and earns a fame star for his online presence. Gavin's music is taking the world by storm!"
         },
         {
           "title": "Jasper v. Sage",
           "photo": "https://i.imgur.com/W6ceKGE.png",
-          "caption": "Elimination ceremony"
+          "caption": "With all of the other contestants at one star, Jasper and Sage are up for elimination. Ultimately, Jasper has more followers from streaming his workout routines. Sage is eliminated from the competition."
         },
         {
           "title": "Sage Eliminated",
           "photo": "https://i.imgur.com/Jp8nYVE.png",
-          "caption": "Sage screams obscenities as he is eliminated"
+          "caption": "Sage screams obscenities at the cast as he leaves the house. He's not happy about being eliminated. He's swears once he gets home he'll make a comeback and show the world what he's made of."
         },
         {
           "title": "Jasper's First Star",
           "photo": "https://i.imgur.com/Vkfk0xX.png",
-          "caption": "Jasper earns his first star for his fitness"
+          "caption": "Jasper posts his new workout regimine and mealplan online. Sims see success in their overall welness journey from following his plan. It goes viral online and he earns his first fame star. Jasper is on his way to becoming a global superstar!"
         },
         {
           "title": "Cassandra's Masterpiece",
           "photo": "https://i.imgur.com/Cpj7TSS.png",
-          "caption": "Cassandra earns a second star for her masterpiece"
+          "caption": "Cassandra decides to continue her series of paintings. She paints another masterpiece depicting the human form. This time, she adds a twist by painting the human form based on one of her castmastes, Nathaniel."
+        }
+      ]
+    }
+  },
+  {
+    "chapter": 4,
+    "data": {
+      "title": "Week Three",
+      "date": "2024-04-02",
+      "chapter": 4,
+      "entries": [
+        {
+          "title": "The Kiss",
+          "photo": "https://i.imgur.com/eLSQbJa.png",
+          "caption": "Jasper has been training Gavin in fitness and the two have gotten awfully close. Jasper feels a connection with Gavin and decides to make a move. He leans in and kisses Gavin. Sparks fly. The tabloids cant stop talking about the new couple. Jasper earns a fame star for his new relationship."
+        },
+        {
+          "title": "The Divorce",
+          "photo": "https://i.imgur.com/GUT1YBB.png",
+          "caption": "Nathaniel serves Eloise with divorce papers. She is so angry with him they get into a screaming match. His neck contorts from the anger. Eloise storms off and refuses to sign the papers."
+        },
+        {
+          "title": "Why I Did It",
+          "photo": "https://i.imgur.com/NBhZwnl.png",
+          "caption": "Fueled by anger, Eloise makes a tearful vlog apologizing to her follows for her actions. But her apology comes across as fake and she loses followers for her insincerity. Eloise loses a fame star for her actions."
+        },
+        {
+          "title": "One Last Try",
+          "photo": "https://i.imgur.com/5HFYbzr.png",
+          "caption": "Eloise sits next to the cast that is safe. She pretends not to know she is up for elimination. Despite her acting skills, the crew doesn't buy her story. Production tells Eloise to stand next to Nathaniel for elimination."
+        },
+        {
+          "title": "A Tearful Goodbye",
+          "photo": "https://i.imgur.com/EiPQy1L.png",
+          "caption": "Eloise is eliminated from the competition. She cries as she leaves the house. She's sad to leave the competition, but she's ready to start fresh. Eloise is determined to make a comeback and show the world what she's made of."
         }
       ]
     }

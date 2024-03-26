@@ -9,7 +9,7 @@ export const Entries = ({ setActiveChapter }) => {
 
   React.useEffect(() => {
     setData(entryData);
-    setActiveChapter(data[activeIndex]?.data);
+    setActiveChapter(data[activeIndex]?.data.chapter);
   }, [data, activeIndex, setActiveChapter]);
 
   const goToNextChapter = () => {
