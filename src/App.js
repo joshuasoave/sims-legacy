@@ -7,14 +7,13 @@ import { CastInfo } from "./Components/CastInfo";
 
 function App() {
   const [activeTab, setActiveTab] = useState("entry");
-  const [activeChapter, setActiveChapter] = useState(1);
 
   return (
     <div className="App">
       <header className="App-header">
         <h1 id="headerText">
           {activeTab === "entry"
-            ? "Chapter " + activeChapter
+            ? "Sims 4 House of Fame"
             : activeTab === "challenge"
             ? "About"
             : activeTab === "rules"
@@ -52,9 +51,7 @@ function App() {
         </button>
       </div>
       <div className="TabContent">
-        {activeTab === "entry" && (
-          <Entries setActiveChapter={setActiveChapter} />
-        )}
+        {activeTab === "entry" && <Entries />}
         {activeTab === "challenge" && <ChallengeInfo />}
         {activeTab === "rules" && <Rules />}
         {activeTab === "cast" && <CastInfo />}

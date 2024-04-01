@@ -3,14 +3,13 @@ import * as entryData from "../Data/Entries";
 import { Chapter } from "./Chapter";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-export const Entries = ({ setActiveChapter }) => {
+export const Entries = () => {
   const [data, setData] = React.useState(entryData);
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   React.useEffect(() => {
     setData(entryData);
-    setActiveChapter(data[activeIndex]?.data);
-  }, [data, activeIndex, setActiveChapter]);
+  }, [data, activeIndex]);
 
   const goToNextChapter = () => {
     if (activeIndex < data.length - 1) {

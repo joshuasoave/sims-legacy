@@ -11,18 +11,16 @@ export const Chapter = ({ chapter }) => {
   }, [chapterNumber]);
 
   return (
-    <div className="entryContentContainer">
-      <div className="entries">
-        {chapter?.entries?.map((entry, index) => (
-          <Entry
-            key={index}
-            entry={entry}
-            index={index}
-            chapterNumber={chapterNumber}
-            entryIndex={index}
-          />
-        ))}
-      </div>
+    <div className="entries">
+      {chapter?.entries?.map((entry, index) => (
+        <Entry
+          key={index}
+          entry={entry}
+          index={index}
+          chapterNumber={chapterNumber}
+          entryIndex={index}
+        />
+      ))}
     </div>
   );
 };
