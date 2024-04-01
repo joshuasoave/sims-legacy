@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
 import castInfoData from "../Data/CastInfo";
-import Modal from "./Modal";
 
 export const CastInfo = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -22,10 +21,6 @@ export const CastInfo = () => {
     },
     [castInfo.length]
   );
-
-  const handleCloseModal = () => {
-    setSelectedCard(null);
-  };
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -61,23 +56,12 @@ export const CastInfo = () => {
       {castInfo &&
         castInfo.length > 0 &&
         castInfo?.map((castMember, index) => (
-          <div
-            key={index}
-            className="castMember"
-            onClick={() => handleCardClick(index)}
-          >
+          <div key={index} className="castMember">
             <h3>{castMember.name}</h3>
             <img src={castMember.img} alt={castMember.name} />
             <p>{castMember.description}</p>
           </div>
         ))}
-      <Modal
-        isOpen={selectedCard !== null}
-        onClose={handleCloseModal}
-        castMember={selectedCard !== null ? castInfo[selectedCard] : null}
-        decreaseCastIndex={() => handleCardClick(selectedCard - 1)}
-        increaseCastIndex={() => handleCardClick(selectedCard + 1)}
-      />
     </div>
   );
 };
