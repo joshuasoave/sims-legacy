@@ -163,6 +163,7 @@ body,
   border-radius: 4px;
   padding: 1.7rem;
   border: 2px solid var(--sims-blue);
+  width: 90%;
 }
 
 .contentContainer p {
