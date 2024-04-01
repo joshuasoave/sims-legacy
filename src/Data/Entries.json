@@ -9,27 +9,27 @@
         {
           "title": "The Beginning",
           "photo": "https://i.imgur.com/YRhqCPn.png",
-          "caption": "And so it all begins, a fateful day in The House of Fame! Six hopefuls were handpicked to embark on a quest for global stardom. Nestled in Del Sol Valley, on a sprawling 64x64 lot, our sims will compete to become a global superstar. The first to reach 5-star celebrity status will claim the ultimate prize!"
+          "caption": "Our sims will compete to become a global superstar"
         },
         {
           "title": "The Creative Circle",
           "photo": "https://i.imgur.com/BBNdmhP.png",
-          "caption": "The cast will be spending most of their time honing their craft in the the creative circle. Each sim has an object tied to their path to fame. They all have a different skill they will focus on to aquire fame. Curious to know more about our cast? Dive into the cast section for the full scoop!"
+          "caption": "The cast will be spending most of their time honing their craft in the the creative circle"
         },
         {
           "title": "The First Night",
           "photo": "https://i.imgur.com/ivf0heh.png",
-          "caption": "On the first night, action unfolds in the creative circle. New friendships blossom and drama brews. Keep an eye on Eloise and Sage, who are growing closer by the day, despite both being married. Will their secret affair be exposed? Or will they manage to keep it under wraps? Only time will tell!"
+          "caption": "On the first night, action unfolds in the creative circle"
         },
         {
           "title": "Painting the Town",
           "photo": "https://i.imgur.com/QCbCOB5.png",
-          "caption": "The second day arrives, and the contestants are primed for their journey. But as night falls, Cassandra stumbles upon Eloise and Sage's secret rendezvous in the creative circle. Seizing the moment, she immortalizes their affair in a scandalous painting, earning fame points aplenty. But trouble brews as Nathaniel learns the truth and delivers a fiery slap to Eloise!"
+          "caption": "Eloise and Sage's secret rendezvous in the creative circle is discovered"
         },
         {
           "title": "Celebrity Sighting",
           "photo": "https://i.imgur.com/ojkOl2k.png",
-          "caption": "As dawn breaks, Gavin hits the town and finds himself in the company of A-lister Thorne Blackwood. A simple photo request turns into a thrilling invitation to share the stage. With this unexpected turn, Gavin inches closer to Cassandra in the fame race. The competition's heating up, and the rest of the house better keep pace if they aim to claim the ultimate prize!"
+          "caption": "Gavin hits the town and finds himself in the company of A-lister Thorne Blackwood"
         }
       ]
     }
@@ -103,5 +103,96 @@
         }
       ]
     }
+  },
+  {
+    "chapter": 4,
+    "data": {
+      "title": "Week Three",
+      "date": "2024-04-02",
+      "chapter": 4,
+      "entries": [
+        {
+          "title": "The Divorce",
+          "photo": "https://i.imgur.com/GUT1YBB.png",
+          "caption": "Eloise and Nathaniel's marriage crumbles"
+        },
+        {
+          "title": "Apology Video",
+          "photo": "https://i.imgur.com/NBhZwnl.png",
+          "caption": "Eloise makes a tearful apology video"
+        },
+        {
+          "title": "First Kiss",
+          "photo": "https://i.imgur.com/eLSQbJa.png",
+          "caption": "Jasper and Gavin's first kiss"
+        },
+        {
+          "title": "Eloise's Elimination",
+          "photo": "https://i.imgur.com/EiPQy1L.png",
+          "caption": "Eloise is eliminated from the competition"
+        }
+      ]
+    }
+  },
+  {
+    "chapter": 5,
+    "data": {
+      "title": "Week Four",
+      "date": "2024-04-02",
+      "chapter": 5,
+      "entries": [
+        {
+          "title": "The Award Ceremony",
+          "photo": "https://i.imgur.com/JaKLrBp.png",
+          "caption": "The contestants gather for the award ceremony"
+        },
+        {
+          "title": "Cassandra's Third Star",
+          "photo": "https://i.imgur.com/Fa14vqG.png",
+          "caption": "Cassandra earns an award and another star for her masterpiece"
+        },
+        {
+          "title": "Gavin's Third Star",
+          "photo": "https://i.imgur.com/AP4CZi5.png",
+          "caption": "Gavin earns an award and another star for his love song about Jasper"
+        },
+        {
+          "title": "Nathaniel's Elimination",
+          "photo": "https://i.imgur.com/Os84cfy.png",
+          "caption": "Nathaniel is eliminated from the competition"
+        }
+      ]
+    }
+  },
+  {
+    "chapter": 6,
+    "data": {
+      "title": "The Finale",
+      "date": "2024-04-02",
+      "chapter": 6,
+      "entries": [
+        {
+          "title": "Responding to the Drama",
+          "photo": "https://i.imgur.com/VBsxWza.png",
+          "caption": "Cassandra respods to hate comments and earns a star"
+        },
+        {
+          "title": "Jasper's Goodbye Dinner",
+          "photo": "https://i.imgur.com/RxvK962.png",
+          "caption": "A goodbye dinner is hosted for Jasper"
+        },
+        {
+          "title": "The Proposal",
+          "photo": "https://i.imgur.com/dOD6WbD.png",
+          "caption": "Jasper proposes to Gavin"
+        },
+        {
+          "title": "The Winner",
+          "photo": "https://i.imgur.com/qeMCxg0.png",
+          "caption": "Cassandra wins the final star doing a 24 hour chairty stream"
+        }
+      ]
+    }
   }
+
 ]
